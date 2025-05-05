@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atteaf</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../society/singles.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البروفايلات</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Droid+Arabic+Naskh&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Badeen+Display&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+  </head>
+
+
+<body dir="rtl">
+  <script src="https://kit.fontawesome.com/91eada0414.js" crossorigin="anonymous"></script>
+
+<!--start header-->
+<header class="header">
+  <div class="top-header">
+    <div class="container">
+        <div class="email">
+            
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:atteaf0@gmail.com">atteaf0@gmail.com</a>
+          </div>
+        </div>
+        <div class="social-icons">
+            
+            <a href="https://www.facebook.com/profile.php?id=61575507370318"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/atteaf0"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/htmlsqf?igsh=MTVybDR3Y2drdGwyNg=="><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@atteaf-w8e"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<!-- الحاوية السفلية -->
+<div class="header-divider"></div>
+<div class="bottom-header">
+  <div class="container">
+
+    <a href="index.html" class="logo">
+      <a href="index.html" class="logo">
+        <img src="../logo.png" alt="شعار الموقع">
+    </a>
+  <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.bottom-header .menu ul');
+        navLinks.classList.toggle('active');
+    }
+</script>
+      <nav class="menu">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="navLinks">
+          
+                  <li><a href="../sport/sports.html">رياضة</a></li>
+                  <li><a href="../Economy/economy.html">اقتصاد</a></li>
+                
+                  
+                  <li><a href="../article/articles.html">رأي</a></li>
+                  <li><a href="../multimedia/multimedia.html">وسائط متعددة</a></li>
+    
+                  <li><a href="../health/health.html">صحة</a></li>
+                  <li><a href="../culture/culture.html">ثقافة وفن</a></li>
+    
+    
+    
+    <li><a href="../society/socity.html">مجتمع</a></li>
+    <li><a href="../news/news.html">أخبار</a></li>
+
+    
+    <li><a href="../index.html">الرئيسية</a></li>
+<div class="search-container">
+  <button class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></button>
+  <div class="search-box" id="searchBox">
+      <input type="text" placeholder="بحث..." class="search-input">
+  </div>
+</div>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+
+
+
+<!--هنا مكان الفوتر سابقا-->
+<!-- تذييل الصفحة -->
+<!-- صندوق المحتوى الأساسي -->
+
+<!-- الحاوية الأساسية -->
+<div class="main-wrapper">
+  <!-- صورة البروفايل بحجم 1500px -->
+  <div class="profile-header">
+    <h1 class="title">الأخطاء الطبية...ضحايا بلا عدالة في اليمن</h1>
+    
+      <img src="helth1.png" alt="عنوان البروفايل" class="profile-cover">
+    </div>
+ <!-- معلومات الكاتب -->
+ <div class="author-info">
+  <a href="all-articles.html">
+      <img src="../author/alshshmaa.jpg" alt="#" class="author-img">
+  </a>
+  <a href="all-articles.html" class="author-name">عبدالرحمن الشماع</a>
+ 
+<!-- إضافة أيقونات التواصل الاجتماعي هنا -->
+<div class="author-social-icons">
+    <a href="#" class="whatsapp" id="whatsapp-share">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" class="facebook" id="facebook-share">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="mailto:atteaf0@gmail.com" class="email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="#" class="share" id="share-btn">
+      <i class="fas fa-share-alt"></i>
+    </a>
+  </div>
+  </div>
+  
+  </div>
+  <script>
+    // كود مشاركة الواتساب
+    document.addEventListener('DOMContentLoaded', function() {
+      const whatsappBtn = document.getElementById('whatsapp-share');
+      if(whatsappBtn) {
+        whatsappBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const url = encodeURIComponent(window.location.href);
+          const text = encodeURIComponent("اقرأ هذا المقال المميز: " + document.title);
+          window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+        });
+      }
+    
+      // كود مشاركة الفيسبوك
+      const facebookBtn = document.getElementById('facebook-share');
+      if(facebookBtn) {
+        facebookBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const url = encodeURIComponent(window.location.href);
+          window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+        });
+      }
+    
+      // كود المشاركة العامة
+      const shareBtn = document.getElementById('share-btn');
+      if(shareBtn) {
+        shareBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          if (navigator.share) {
+            navigator.share({
+              title: document.title,
+              text: 'اكتشف هذا المقال الرائع',
+              url: window.location.href,
+            })
+            .catch(err => console.error('حدث خطأ في المشاركة:', err));
+          } else {
+            // حل بديل للمتصفحات التي لا تدعم navigator.share
+            const shareUrl = `mailto:?subject=${encodeURIComponent(document.title)}&body=${encodeURIComponent(window.location.href)}`;
+            window.location.href = shareUrl;
+          }
+        });
+      }
+    });
+    </script>
+  
+  <!-- صندوق محتوى البروفايل -->
+  <div class="content-box">
+<p>
+    في صباح شتائي من يناير عام 2016، دخلت (عبير عبد الله)، فتاة في العشرين من عمرها، إلى مستشفى الثورة بصنعاء لإجراء عملية ولادة قيصرية، كان من المفترض أن تكون بداية حياة جديدة لها ولطفلها المنتظر، لكن ما حدث داخل غرفة العمليات بحسب شقيقتها؛ أميرة التي روت لـ (أطياف) القصة، لم يكن سوى فصلاً أول من مأساة طويلة، انتهت بفقدانها لطفلها، وكليتيها.
+</p>
+<br>
+<p>
+    تضيف (أميرة) "خرجت أختي عبير من مستشفى الثورة محملة بالألم، لكنها لم تيأس في عام 2019، لجأت إلى مستشفى خاص بصنعاء لزراعة كلية جديدة، تبرع بها أخي بتكلفة تجاوزت ثمانية ملايين ريال، لكن العملية انتهت بكارثة جديدة: نزيف حاد وفشل العملية، دون أي تحمّل حقيقي للمسؤولية من قبل المستشفى"، رغم وضوح القانون اليمني في المادة (304) الذي يلزم بالتعويض عن الأضرار الناتجة عن الإهمال.
+</p>
+<br>
+<p>
+    "أطياف" التي رصدت وتتبعت قصة (عبير) المؤلمة حصلت على تقرير طبي يثبت تعرض عبير للأخطاء الطبية التي تعرضت لها، وحولت حياتها إلى جحيم لا يطاق.
+
+</p>
+
+<br>
+<img src="helth22.jpg" alt="" class="profile-cover">
+                                 <h3 class="hij">تقرير طبي يثبت تعرض عبير لخطأ طبي</h3>
+
+
+                                 <br>
+                                 <br>
+
+<p>
+عبير، ليست إلا نموذجًا واحدًا من بين آلاف اليمنيين الذين يدفعون ثمن الأخطاء الطبية في صمت، وبينما تتزايد المآسي، تظل المساءلة والعدالة غائبة، ويتحول الضحايا إلى مجرد أرقام – إن وُثقوا أصلاً – في بلد يعيش أزمة قانونية وصحية متشابكة، حيث يكون الجاني في كثير من الأحيان هو الحَكَم أيضًا.
+</p>
+
+
+<div class="interview-question">
+    إقرار الطبيب بالخطأ
+</div>
+ 
+     <p>
+        مأساة (عبير عبد الله) يماثلها مأساة الشاب الثلاثيني (أحمد عوض) الذي تعرض بحسب أخيه (محمد) لحادث سقوط تسبب بكسور في الحوض، منتصف شهر إبريل من العام 2023، ونقل على إثرها إلى إحدى المستشفيات الخاصة بالعاصمة صنعاء.
+     </p>
+     <br>
+     <p>
+        يقول شقيقه محمد "لم يكن أخي أحمد يعاني من إصابة تمزق الأعصاب، بل هي رواية نسجتها إدارة المستشفى لتغطي خطأها، سبب تمزق الأعصاب كان ناتج عن تركيب مسمار أكبر من الحجم المطلوب مما تسبب بتمزّق الأعصاب"، يضيف " ليست المشكلة هنا، بل في تلوث الدم، نتيجة عدم تعقيم أدوات الجراحة، وعدم الاهتمام به بعد العملية، ما نتج عنه تقيح الجرح وانتشار التلوث عبر الدم".
+     </p>
+     
+     
+     <br>
+     
+     <p>
+        "أطياف" التقت الدكتور الذي أجرى العملية، والذي فضل الإشارة إلى اسمه بـ (م. ن)، وأقر بالخطأ قائلا" رفضت إجراء العملية لأن المسمار أكبر من الحجم المطلوب، إلا أن إدارة المستشفى أصرت على تركيبه وأنها هي من ستتحمل المسؤولية ".
+     </p>
+     <br>
+          <p>
+            بحسب محمد شقيق أحمد "دفعت أسرته 6 ملايين ريال لإنقاذ حياته من تلوث الدم، إذ تبلغ قيمة الحقنة الواحدة من المضاد الحيوي المخصص لعلاجه 25 ألف ريال، ما يعادل 46 دولار"، بحسب سعر الصرف في صنعاء. 
+        </p>
+
+
+ 
+
+     <div class="interview-question">
+        حجم الكارثة
+    </div>
+<p>
+    تشير منظمة الصحة العالمية أن من بين عشرة مرضى يتعرض أربعة مرضى لأذى أثناء تلقيهم الرعاية الصحية الأولية والإسعافية، ووفقا لـ مدير منظمة الصحة العالمية تيدروس أدحانوم غبريسيس يتوفى خمسة أشخاص كل دقيقة في العالم بسبب أخطاء طبية.
+</p>
+<br>
+<p>
+    في اليمن وبحسب وزارة الصحة لا توجد إحصائيات عن حجم الأخطاء الطبية، لكن جميع من التقيناهم في هذا التحقيق يؤكد أن ضحاياها كثر، إذ وثق معد التحقيق ثلاث حالات تعرضت للإهمال والخطأ الطبي، كما رصد حدوث أخطاء طبية لنحو أكثر من ٢٠ حالة نشرتها وسائل إعلامية موثقة، خلال السنوات القليلة الماضية.    
+</p>
+<br>
+<p>
+    من جانبه أوضح رئيس لجنة التحقيق بالمجلس الطبي الأعلى الدكتور (خالد سويلم) في تصريح صحفي سابق أن "شكاوى الأخطاء الطبية لعام 2022م بلغت نحو 200 شكوى، تقدمتها شكاوى الأخطاء الجراحية بواقع 104شكوى".
+</p>
+
+
+<div class="interview-question">
+
+    كيف تحدث الأخطاء الطبية
+</div>
+<p>
+    بحسب الأبحاث الطبية فإن الخطأ الطبي يعني الجهل بأمور فنية، يفترض في كل من يمارس المهنة الإلمام بها، أو كان هذا الخطأ راجعا إلى الإهمال، أو عدم بذل الطبيب العناية اللازمة. 
+</p>
+<br>
+<p>
+    وبحسب الدكتور صالح عبدالله المرفدي مستشار وعضو المحكمة العليا بالجمهورية اليمنية، فإن الخطأ الطبي قد يحدث نتيجة عدم قيام الطبيب بإجراء الفحص الاولي للمريض، أو نتيجة عدم تحققه من نوع المرض الذي يعاني منه المريض، أو عدم تحريره للوصفة الطبية بشكل واضح، أو عدم حرصه على تمكين المريض أو من يقوم على رعايته من فهمها بشكل جلي، وقد يقع الخطأ نتيجة عدم انتباه الطبيب لقصور أو عيب في الآلة الطبية.
+</p>
+<br>
+<p>
+    ويشير المرفدي إلى أن ما يحدث في اليمن من كوارث طبية يكشف حجم العبث بأرواح المرضى باسم الطب، والدليل على ذلك ما تشهده منصات التواصل الاجتماعية من قصص مأساوية، راح ضحيتها أطفال صغار، نتيجة هفوات جراحية بالجملة، وعمليات تخدير بدائية فاشلة، إلى جانب سوء التشخيص الأعمى الذي يؤدي ببعض الحالات إلى غرف العناية المركزة، والبعض الآخر إلى ثلاجة الموتى.
+</p>
+
+<div class="interview-question">
+    تقديم شكوى
+
+</div>
+<p>
+    كيف حدد القانون اليمني إجراءات تقديم شكوى بخطأ طبي؟ وفقا لقانون المجلس الطبي في اليمن، يفترض أن يقدم المريض الذي وقع بحقه الخطأ أو أحد أفراد عائلته، شكوى للمجلس الطبي، الذي بدوره يشكل لجنة للتحقيق بغرض استجلاء الحقيقة، فإذا ثبت ارتكاب الطبيب للمخالفة، تمنح اللجنة التي تم تشكيلها للتحقيق صلاحية توقيع أي جزاء من الجزاءات الإدارية المنصوص عليها في القانون، بشرط أن تتناسب العقوبة مع الخطأ المرتكب، وأن تراعي اللجنة الظروف التي ارتكب فيها هذا الخطأ.
+</p>
+<br>
+<p>
+    تقول أخت عبير (أميرة) "لم نذهب إلى المجلس الطبي لتقديم شكوى، لأننا نعلم بأنه لن يتم الاستجابة لنا، وإن تم التجاوب معنا، ستظهر نتائج تحقيق المجلس بعدم وجود خطأ طبي "، محمد شقيق (أحمد عوض) هو الآخر ذهب لتقديم شكوى في المجلس الطبي، طُلب منه تحديد اسم المستشفى والدكتور، وبحسب كلام محمد "حين ذكر لهم اسم المستشفى والطبيب الذي ارتكب الخطأ تفاجأ بعدم إعطائه استمارة تقديم شكوى، وأكتفى المجلس بتوجيه رسالة شفهية إلى إدارة المستشفى والدكتور، تخبرهم أنه يجب عليهم الاهتمام بالمريض".
+</p>
+
+<div class="interview-question">
+    مسئولية الصحة
+
+</div>
+<p>
+    وفي ظل تنامي حدوث الأخطاء الطبية عاما تلو آخر، يسأل الجميع أين دور وزارة الصحة تجاه هذه الكارثة؟ وهنا يجيب أحد الموظفين في الوزارة الذي رفض الكشف عن هويته وفضل الإشارة إلى اسمه بـ (م.ع)، يقول "لا يوجد قصور من قبل الوزارة، نحن نتعامل مع القضايا التي هي في إطار مسؤوليتنا واختصاصنا بجدية ومسؤولية، وقضايا الأخطاء الطبية ليست من اختصاصنا، هناك جهة هي المسؤولة عن هذه القضايا، كون القانون قد منح المجلس الطبي الأعلى الحق في التحقيق في قضايا الأخطاء الطبية والفصل فيها ومشروعية إنزال العقاب".
+</p>
+<br>
+
+<div class="interview-question">
+    دور غائب
+</div>
+<p>
+    لماذا لا يقوم المجلس الطبي بدوره في مساءلة مرتكبي الخطأ الطبي؟ يؤكد الدكتور (صالح المرفدي) أنه من خلال الاطلاع على قانون إنشاء المجلس الطبي، يتضح منذُ الوهلة الأولى، أن هناك مشكلة قانونية تكتنف تنظيم هذا المجلس في اليمن، والذي يختص قانونا بالنظر في شكاوى المواطنين بخصوص الأخطاء الطبية، إذ إن (14) من أعضائه أطباء، باستثناء واحد ليس طبيباً يمثّل المجتمع، فضلاً عن مستشار قانوني، يختاره رئيس الوزراء، ويكمل به عدد الأعضاء الـ 16. 
+</p>
+<br>
+<p>
+    مضيفا " ومن هنا يتبين لنا بجلاء عدم حيادية المجلس الطبي في اليمن؛ باعتبار أن الأغلبية فيه من زملاء المهنة، باستثناء شخص واحد، وهو المستشار القانوني، ففي الوقت الذي يُفترض فيه أن يكون هنالك توازن في عضوية المجلس، وأن يكون على الأقل مناصفةً بين الأطباء وممثلين من عامة المجتمع من غير الأطباء، وبناءً على ذلك، نرى ومن جهة نظرنا المتواضعة، أن قانون المجلس الطبي الأعلى بحاجة إلى تعديل، لإحداث التوازن المطلوب فيه". 
+</p>
+<br>
+<p>
+    موضحا أن هناك عيب في النص القانوني المنظم لعمل المجلس، حيث لم يجز القانون فتح التحقيق في جرائم الأخطاء الطبية، وتحريك الدعوى الجزائية المبنية على تلك التحقيقات، إلا بعد صدور قرار من المجلس الطبي الأعلى، مؤكدا أن عدم صدور اللائحة التنفيذية لقانون المجلس الطبي الأعلى لغاية الآن، قد تكون إحدى المعوقات القانونية فيما يتعلق بتنظيم المسائل التفصيلية للأخطاء الطبية.
+</p>
+<br>
+<br>
+<p>
+    حاول معد التحقيق التواصل بشتى الطرق مع مسؤول في المجلس الطبي، إلا أن محاولته باءت بالفشل، لكن الدكتور (فضل حراب) نقيب الصيادلة اليمنيين علق على تلكؤ المجلس الطبي في النظر في قضايا الأخطاء الطبية قائلا "ليس عدلاً أن يكون أعضاء المجلس الطبي من ذوي المصالح بالدرجة الأولى، من أطباء يمتلكون مستشفيات خاصة ويديرون مستشفيات حكومية ورؤساء أقسام، متسائلا لمن سيلجأ المرضى حال وقع بحقهم أخطاء طبية، وإذا افترضنا أن رئيس المجلس ارتكب خطأ طبي، من سيحاسبه على ذلك". 
+</p>
+
+<div class="interview-question">
+    عقوبات قانونية
+</div>
+<p>
+    ما طبيعة العقوبات التي تسقط بمرتكبي الأخطاء الطبية حال ثبت فعلهم للخطأ، بحسب المادة (٤٠) من قانون الجرائم والعقوبات اليمني وتعديلاتها، يحدد مقدار خُمس الدية في القتل (بخطأ طبي) بمبلغ مليون وثمانمائة ألف ريال يمني، كما أجاز القانون تعديلها بقرار جمهوري قانوني، لتتماشى مع ظروف المجتمع وتطوراته اللاحقة، ويتقاسمها الورثة وفقا للأنصبة الشرعية، كما حددت المادة (٤١) من نفس القانون، الأعضاء (المنفردة) في جسم الإنسان المستحقة لدية كاملة، وبيّنت نفس المادة الأعضاء (الزوجية) المستحقة لدية كاملة.
+</p>
+<br>
+<p>
+    فيما نصت المادة (٤٢) من القانون نفسه، على تحديد وصف الجروح والإصابات التي تقع على جسم الإنسان، واستعرضت مقدار الأرش بالتحديد والتفصيل أمام كل جرح أو إصابة، وفي كل الأحوال، يكون مقدار المبالغ المحكوم بها لا تتجاوز خمس أي دية أو أرش محكوم بها.
+</p>
+<br>
+<br>
+<p>
+    وختاما فإن القصص التي حكاها ضحايا الأخطاء الطبية في اليمن، من عبير إلى أحمد، تكشف عن أزمة مركبة يتشابك فيها الإهمال المهني مع عجز القانون وغياب الرقابة. وتحقيق العدالة يبدأ بإصلاح المجلس الطبي، وتفعيل القوانين، ومحاسبة المتسببين في الأخطاء، وخلق بيئة صحية آمنة، وإلى أن يتحقق ذلك، ستبقى غرف العمليات في اليمن ساحة مفتوحة لأخطاء لا ترحم، ودموع لا تجف.
+</p>
+  </div>
+
+  <!-- قسم الأكثر قراءة -->
+  <div class="most-read-section">
+    <div class="most-read-header">
+        <h2 class="section-title-tht">اقرأ أيضا</h2>
+    </div>
+    <div class="most-read-items">
+        <div class="most-read-item">
+            <a href="../health/story2.html">
+                <img src="../health/story2.png" alt="مقالة 1">
+            </a>
+            <a href="../health/story2.html">عائشة الكولي...من قلب الريف إلى بوابة المستقبل الطبي
+
+            </a>
+        </div>
+       
+  
+    </div>
+  </div>
+  
+   
+  
+  <!-- قسم الأكثر قراءة -->
+  <div class="most-read-section">
+    <div class="most-read-header">
+      <h2 class="section-title-tht">مواضيع قد تهمك</h2>
+    </div>
+      <div class="most-read-item">
+        <a href="../culture/dialog1.html">
+          <img src="../culture/dialog1.jpg" alt="مقالة 1"></a>
+          <a href="../culture/dialog1.html">هديل مانع: النقد أمر طبيعي لأي فنان لكن التعليقات السلبية تؤذيني
+          </a>
+      </div>
+      <div class="most-read-item">
+        <a href="../sport/dialog2.html">
+          <img src="../sport/dialog2.jpeg" alt="مقالة 2"></a>
+          <a href="../sport/dialog2.html">علي النونو: وزير الرياضة ليس رياضيا
+          </a>
+      </div>
+
+
+      <div class="most-read-item">
+        <a href="../Economy/economy.html">
+        <img src="../Economy/economy1.jpg" alt="مقالة 3"></a>
+        <a href="../Economy/economy1.html">       بعد رسوم ترامب الجمركية...هل ستحافظ اليمن على نكهة قهوتها في الأسواق العالمية
+        </a>
+    </div>
+ 
+      <div class="most-read-item">
+        <a href="../society/kder.html">
+          <img src="../society/kder.jpg" alt="مقالة 2"></a>
+          <a href="../society/kder.html">التعليم في خدير: عندما يُصبح التلميذ معلّمًا
+          </a>
+      </div>
+      
+      <div class="most-read-item">
+        <a href="../society/gwafy.html">
+        <img src="../society/gwafy1 (1).png" alt="مقالة 3"></a>
+        <a href="../society/gwafy.html">       مأرب تنتفض على قوافي الموت
+        </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- النشرة البريدية -->
+<div class="newsletter">
+    <h2>اشترك في نشرتنا البريدية</h2>
+    <form id="newsletter-form">
+      <input 
+        type="email" 
+        id="email-input"
+        name="email"
+        placeholder="atteaf0@gmail.com"
+        required
+      >
+      <button type="submit">اشتراك</button>
+    </form>
+    <div id="subscription-message" style="display: none;"></div>
+  </div>
+  
+  <!--هنا مكان الفوتر سابقا-->
+  <!-- تذييل الصفحة -->
+  
+  
+  
+     
+  
+  <div class="national-symbol">
+    <img src="../شعار الجمهورية اليمنية الأصلي.png" alt="نسر يمني" class="eagle-icon">
+    
+    <div class="designer-credit" style="text-align: right; margin-right: 20px; position: relative;">
+      <p style="margin: 0;">صمم الموقع بواسطة <span style="color: #CE1126; font-weight: bold;">[حاتم]</span></p>
+      
+      <button id="contactBtn" style="background: #CE1126; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-top: 5px; font-size: 12px;">
+        تواصل للتصميم <i class="fas fa-chevron-down"></i>
+      </button>
+      
+      <!-- قائمة الخيارات (ستظهر عند النقر) -->
+      <div id="contactMenu" style="display: none; position: absolute; right: 0; background: white; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 100; min-width: 150px;">
+        <button onclick="openWhatsApp()" 
+          style="background: none; border: none; color: #25D366; cursor: pointer; padding: 8px 12px; display: flex; align-items: center; gap: 5px;">
+      <i class="fab fa-whatsapp"></i> التواصل عبر واتساب
+  </button>
+  
+  <script>
+  function openWhatsApp() {
+      const phone = "00967773551347"; // استبدلها برقمك مع رمز الدولة
+      const message = "مرحباً، أنا مهتم بخدماتك التصميمية"; // رسالة افتراضية
+      
+      try {
+          // المحاولة الأولى (لأجهزة الكمبيوتر والجوال)
+          window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+          
+          // إذا لم يفتح خلال ثانية، استخدم طريقة بديلة
+          setTimeout(() => {
+              if(!window.document.hasFocus()) {
+                  window.location.href = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+              }
+          }, 1000);
+      } catch (e) {
+          // إذا فشل كل شيء، عرض الرقم للنسخ
+          navigator.clipboard.writeText(phone)
+              .then(() => alert(`تم نسخ الرقم: ${phone}\nيمكنك البحث عنه يدوياً في واتساب`))
+              .catch(() => prompt("الرجاء نسخ الرقم يدوياً للواتساب:", phone));
+      }
+  }
+  </script>
+        <a href="https://www.facebook.com/profile.php?id=100011494994763&locale=ar_AR" target="_blank" style="display: block; padding: 8px 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee;">
+          <i class="fab fa-facebook" style="color: #1877F2; margin-left: 5px;"></i> فيسبوك
+        </a>
+        <button onclick="sendEmail()" 
+          style="background: none; border: none; color: #CE1126; cursor: pointer; padding: 8px 12px; display: flex; align-items: center; gap: 5px;">
+      <i class="fas fa-envelope"></i> التواصل عبر الإيميل
+  </button>
+  
+  <script>
+  function sendEmail() {
+      const email = "hateemalsaqqaf@gmail.com";
+      try {
+          window.location.href = "mailto:" + email;
+      } catch (e) {
+          navigator.clipboard.writeText(email)
+              .then(() => alert("تم نسخ الإيميل: " + email))
+              .catch(() => prompt("الرجاء نسخ الإيميل يدوياً:", email));
+      }
+  }
+  window.location.href = `mailto:${email}?subject=طلب تصميم موقع&body=السلام عليكم%0D%0Aأرغب في...`;
+  if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+      navigator.clipboard.writeText(email);
+  }
+  </script>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+      <!-- إضافة المزيد من البروفايلات لاحقًا -->
+      <footer class="footer">
+          <div class="container">
+              <p>جميع الحقوق محفوظة لأطياف &copy; 2025</p>
+              <!-- أيقونات وسائل التواصل الاجتماعي -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61575507370318" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i> <!-- أيقونة فيسبوك -->
+            </a>
+            <a href="https://x.com/atteaf0" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i> <!-- أيقونة تويتر -->
+            </a>
+            <a href="https://www.instagram.com/htmlsqf?igsh=MTVybDR3Y2drdGwyNg==
+  
+            " target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i> <!-- أيقونة انستغرام -->
+            </a>
+            <a href="https://www.youtube.com/@atteaf-w8e" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i> <!-- أيقونة يوتيوب -->
+            </a>
+  
+        <!-- زر المشاركة -->
+        <div class="share-pin" onclick="shareContent()" title="مشاركة الرابط">
+          <i class="fas fa-share-alt"></i> <!-- أو استخدم أيقونة الدبوس -->
+        </div>
+  
+        </div>
+  
+        <nav class="footer-menu">
+          <ul>
+              <li><a href="../about_us/abut_us.html">من نحن</a></li>
+              <li><a href="../contact/contact.html">اتصل بنا</a></li>
+              <li><a href="../privacy-policy/privacy-policy.html">سياسة الخصوصية</a></li>
+          </ul>
+      </nav>
+  </div>
+</footer>
+  
+  <script>
+    document.getElementById('share-btn').addEventListener('click', function() {
+        if (navigator.share) {
+            navigator.share({
+                title: 'الجمهورية اليمنية',
+                text: 'تعرف على الجمهورية اليمنية',
+                url: window.location.href
+            }).catch(err => {
+                console.error('Error sharing:', err);
+            });
+        } else {
+            alert('خاصية المشاركة غير مدعومة في متصفحك. يمكنك نسخ الرابط يدوياً.');
+        }
+    });
+    </script>
+  
+  <script src="../multimedia.js"></script>
+  
+  
+</body>
+
+
+
+
+</html>

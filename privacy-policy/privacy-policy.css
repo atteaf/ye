@@ -1,0 +1,539 @@
+/* إعادة تعيين التنسيقات */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Almarai", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: right; /* محاذاة النص إلى اليمين */
+    direction: rtl; /* النص من اليمين إلى اليسار */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* الحاوية العلوية */
+.top-header {
+    padding: 10px 0;
+    background-color: #111;
+background-image: linear-gradient(to left,red, white, black );
+
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: ltr; /* إعادة تعيين اتجاه النص للعناصر المحددة */
+}
+
+.top-header .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.top-header .email i {
+    color: #fff;
+}
+
+.top-header .social-icons {
+    display: flex;
+    gap: 15px;
+    z-index: 2;
+}
+
+.top-header .social-icons a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.top-header .social-icons a:hover {
+    color: #df1212;
+}
+
+/* الخط الفاصل */
+.header-divider {
+    height: 2px;
+    background-color: #eedede;
+}
+
+/* الحاوية السفلية */
+.bottom-header {
+    padding: 10px 0;
+    background-color: #000;
+    background-image: linear-gradient(to left, red, white, black);
+
+}
+
+.bottom-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    direction: ltr;
+}
+
+.bottom-header .logo {
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #CE1126, #FFFFFF, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img {
+    height: 450%; /* تعديل الارتفاع حسب الحاجة */
+    max-width: 100%; /* حتى لا يتجاوز العرض الحاوية */
+    object-fit: contain; /* الحفاظ على الأبعاد */
+    margin-top: 15px;
+}
+    
+.bottom-header .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 29px;
+}
+
+.bottom-header .menu ul li a {
+    color: #0a66ef;
+    font-family: Arial, sans-serif;
+   
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.bottom-header .menu ul li a:hover {
+    color: #f3ecec;
+    background-color: #CE1126;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: inline-block; /* لمنع تمدد العناصر */
+}
+
+
+
+
+/* تنسيق القائمة */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; 
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.menu ul li a:hover {
+    color: #ccc;
+}
+
+/* زر القائمة */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+padding: top 1px;
+    right: 10px;
+    z-index: 1001; 
+}
+
+/* القائمة المنسدلة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .bottom-header .menu ul {
+        display: none;
+        flex-direction: column-reverse;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    .bottom-header .menu ul.active {
+        display: flex;
+    }
+
+    .bottom-header .menu ul li {
+        margin: 0 100px;
+        text-align: center;
+        background-color:rgb(0, 255, 145);
+    }
+}
+.bottom-header .menu ul li :hover{
+    background-color: black;
+}
+
+/* باقي التنسيقات */
+.email a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.email a:hover {
+    color: #ccc;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.search-icon:hover {
+    color: #ccc;
+}
+
+.search-box {
+    display: none;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    width: 150px;
+}
+
+.search-input::placeholder {
+    color: #ccc;
+}
+
+/* تذييل الصفحة */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu ul li {
+    margin-left: 20px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* تهيئة عامة - خطوط وألوان */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #C00;
+  --secondary-color: #333;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+}
+
+
+/* النشرة البريدية */
+.newsletter {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  /* تجاوب مع الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .hero-section {
+      grid-template-columns: 1fr;
+    }
+    
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .newsletter input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  
+  a{
+    text-decoration: none;
+    color: #000000;
+  }
+  a:hover{
+    color: #CE1126;
+  }
+  
+  /* وضع هذا في ملف CSS الخاص بك */
+  .footer ~ ul, 
+  .footer ~ li, 
+  .newsletter + ul, 
+  .newsletter + li {
+    display: none !important;
+  }
+  
+  
+  .social-share-container {
+      display: flex;
+      align-items: center;  /* محاذاة رأسية */
+      gap: 15px;           /* مسافة بين العناصر */
+      margin: 15px 0;
+  }
+  
+  .social-media {
+      display: flex;
+      gap: 10px;           /* مسافة بين الأيقونات */
+  }
+  
+  .social-media a {
+      color: #fff;
+      font-size: 20px;
+      transition: 0.3s;
+  }
+  
+  .share-button {
+      background: #4267B2;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+  }
+  
+  .white-stripe {
+    /* تأثيرات إضافية */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  /* تنسيقات العناصر الداخلية */
+  .national-symbol {
+    text-align: center;
+  }
+  .eagle-icon {
+    width: 100px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .eagle-icon{
+    visibility: hidden; /* يخفي المحتوى مع الحفاظ على المساحة */
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* حجم أساسي للأيقونة */
+  .share-button i {
+    font-size: 7px; /* الحجم الافتراضي */
+  }
+  
+  /* تعديل الحجم للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .share-button i {
+      font-size: 14px; /* حجم أصغر للجوال */
+    }
+    
+    .share-button {
+      padding: 5px 10px; /* تعديل حجم الزر نفسه */
+      font-size: 12px; /* حجم نص أصغر */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .social-media-wrapper {
+      text-align: center;
+    }
+    
+    .social-media {
+      display: inline-flex; /* يحافظ على التنسيق الأفقي */
+    }
+  }
+  
+  .social-container {
+    display: flex;
+    align-items: center; /* يضمن محاذاة جميع العناصر */
+    gap: 10px;
+  }
+  
+  .share-pin {
+    margin: 0;
+    padding: 0;
+    line-height: 1; /* يمنع أي فراغ غير ضروري */
+  }
+  
+  .share-pin {
+    display: inline-flex; /* بدلاً من inline-block */
+    align-items: center; /* محاذاة رأسية */
+    vertical-align: middle; /* محاذاة مع العناصر المجاورة */
+    position: relative;
+    top: 1px; /* تعديل دقيق للموقع */
+  }
+  
+  
+  .yemen-stats {
+    display: flex;
+    justify-content: space-around;
+  }
+  .stat-item {
+    text-align: center;
+  }
+  .number {
+    font-size: 2rem;
+    color: #CE1126;
+    font-weight: bold;
+  }
+  .yemen-stats {
+    display: flex;
+    justify-content: space-around;
+    position: relative; /* هذه السطر ضروري */
+    padding-bottom: 40px; /* لتجنب تداخل المحتوى */
+  }
+  
+  
+  /* سياسة الخصوصية - منصة أطياف - إصدار معدل بأسماء فريدة */
+
+
+.privacy-main-content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-main-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.privacy-section {
+  margin-bottom: 30px;
+}
+
+.privacy-section-title {
+  color: #2c3e50;
+  margin-top: 25px;
+  font-size: 22px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.privacy-text {
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.privacy-update-date {
+  font-style: italic;
+  color: #7f8c8d;
+  text-align: left;
+  margin-top: 30px;
+}
+
+/* التنسيق للغة العربية */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .privacy-update-date {
+  text-align: left;
+}

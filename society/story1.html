@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atteaf</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="singles.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البروفايلات</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Droid+Arabic+Naskh&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Badeen+Display&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+  </head>
+
+
+<body dir="rtl">
+  <script src="https://kit.fontawesome.com/91eada0414.js" crossorigin="anonymous"></script>
+
+<!--start header-->
+<header class="header">
+  <div class="top-header">
+    <div class="container">
+        <div class="email">
+            
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:atteaf0@gmail.com">atteaf0@gmail.com</a>
+          </div>
+        </div>
+        <div class="social-icons">
+          
+          <a href="https://www.facebook.com/profile.php?id=61575507370318"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/atteaf0"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/htmlsqf?igsh=MTVybDR3Y2drdGwyNg=="><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@atteaf-w8e"><i class="fab fa-youtube"></i></a>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- الحاوية السفلية -->
+<div class="header-divider"></div>
+<div class="bottom-header">
+  <div class="container">
+
+    <a href="index.html" class="logo">
+      <a href="index.html" class="logo">
+        <img src="../logo.png" alt="شعار الموقع">
+    </a>
+  <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.bottom-header .menu ul');
+        navLinks.classList.toggle('active');
+    }
+</script>
+      <nav class="menu">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="navLinks">
+          
+           
+                  <li><a href="../sport/sports.html">رياضة</a></li>
+                  <li><a href="../Economy/economy.html">اقتصاد</a></li>
+                
+                  
+                  <li><a href="../article/articles.html">رأي</a></li>
+                  <li><a href="../multimedia/multimedia.html">وسائط متعددة</a></li>
+    
+                  <li><a href="../health/health.html">صحة</a></li>
+                  <li><a href="../culture/culture.html">ثقافة وفن</a></li>
+    
+    
+    
+    <li><a href="../society/socity.html">مجتمع</a></li>
+    
+    
+    <li><a href="../index.html">الرئيسية</a></li>
+<div class="search-container">
+  <button class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></button>
+  <div class="search-box" id="searchBox">
+      <input type="text" placeholder="بحث..." class="search-input">
+  </div>
+</div>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+
+
+
+<!--هنا مكان الفوتر سابقا-->
+<!-- تذييل الصفحة -->
+<!-- صندوق المحتوى الأساسي -->
+
+<!-- الحاوية الأساسية -->
+<div class="main-wrapper">
+  <!-- صورة البروفايل بحجم 1500px -->
+  <div class="profile-header">
+    <h1 class="title">رحلة الموت..مأساة بحث اليمنيين عن فرصة عمل في الخارج</h1>
+    
+      <img src="story1.jpg" alt="عنوان البروفايل" class="profile-cover">
+    </div>
+ <!-- معلومات الكاتب -->
+ <div class="author-info">
+  <a href="all-articles.html">
+      <img src="../author/alshshmaa.jpg" alt="اسم الكاتب" class="author-img">
+  </a>
+  <a href="all-articles.html" class="author-name">عبدالرحمن الشماع</a>
+  
+<!-- إضافة أيقونات التواصل الاجتماعي هنا -->
+<div class="author-social-icons">
+  <a href="#" class="whatsapp" id="whatsapp-share">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="#" class="facebook" id="facebook-share">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="mailto:atteaf0@gmail.com" class="email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="#" class="share" id="share-btn">
+    <i class="fas fa-share-alt"></i>
+  </a>
+</div>
+</div>
+
+</div>
+<script>
+  // كود مشاركة الواتساب
+  document.addEventListener('DOMContentLoaded', function() {
+    const whatsappBtn = document.getElementById('whatsapp-share');
+    if(whatsappBtn) {
+      whatsappBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent("اقرأ هذا المقال المميز: " + document.title);
+        window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+      });
+    }
+  
+    // كود مشاركة الفيسبوك
+    const facebookBtn = document.getElementById('facebook-share');
+    if(facebookBtn) {
+      facebookBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = encodeURIComponent(window.location.href);
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+      });
+    }
+  
+    // كود المشاركة العامة
+    const shareBtn = document.getElementById('share-btn');
+    if(shareBtn) {
+      shareBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            text: 'اكتشف هذا المقال الرائع',
+            url: window.location.href,
+          })
+          .catch(err => console.error('حدث خطأ في المشاركة:', err));
+        } else {
+          // حل بديل للمتصفحات التي لا تدعم navigator.share
+          const shareUrl = `mailto:?subject=${encodeURIComponent(document.title)}&body=${encodeURIComponent(window.location.href)}`;
+          window.location.href = shareUrl;
+        }
+      });
+    }
+  });
+  </script>
+
+  <!-- صندوق محتوى البروفايل -->
+  <div class="content-box">
+<p>
+  خلافا لعادته في كل مرة يودع فيها أسرته، متجها لجهة عمله، ودع الشاب الثلاثيني عبد الحميد كوكبة أفراد أسرته، وقبضة الحزن تُحكم على  قلبه، احتضن طفليه بحراره، وسالت الدموع من عينيه كما يسيل السيل في خريف الأمطار، كما لو أنه يشعر بأنه الوداع الأخير لأسرته، كان إحساسه مفعما بالخوف، لم تمض سوى أيام على مغادرته، مسقط رأسه بمحافظة المحويت، حتى تلقت أسرته اتصالا هاتفيا كان الأقسى والأكثر إيلاما في حياة الأسرة..
+</p>
+<br>
+<p>
+  عبد الحميد هو أحد ساكني قرية (كوكبة)، بمديرية حفاش، التي تبعد خمسة وعشرين كيلو متر، عن مركز محافظة المحويت، يعيش بالمديرية مع 37,884 شخصا، يصارع معظم شبابها الأوضاع الاقتصادية المتردية في اليمن، والتي بسببها قرر الكثير منهم ترك الوطن، والاتجاه نحو الخارج عبر التهريب، بحثا عن كسب لقمة العيش، مجبرين على السير في طرق محاطة بكمائن الموت، حالهم كحال ملايين الشباب اليمني، لتنتهي رحلة البعض منهم بنهاية مأسوية، لقوا حتفهم، وعادوا إلى أسرهم جثث على سيارة الإسعاف. 
+</p>
+<p>
+  عبد الحميد الذي كان يعمل بمحافظة صعدة، أجبرته أوضاع البلاد المتردية، على التفكير بمغادرة الوطن، منتصف يونيو من العام 2021، حيث قرر مع مجموعة من شباب قريته، دخول السعودية، عن طريق التهريب برا. 
+</p>
+
+
+
+<div class="interview-question">
+  وداع مؤلم
+ </div>
+     <p>
+      بعينين محمرتين مليئتين بالدموع، وصوت ضعيف لا تفهم بعض كلماته، تروي والدة عبد الحميد، مشهد وداعه الأخير لأسرته، تقول" ضم طفليه شيماء سبع سنوات، ومحمد خمس سنوات، وهو ويبكي ويقول: أولادي في أمانتك يا أمي"، انهمرت الدموع من عينيها، وصمتت للحظة، ثم استأنفت حديثها وتناهيد الألم تعصر كلامها، قائلة " ذهب على قدميه وعاد محمولاً على الأكتاف، ولدي لم يكن كعادته في كل مرة يودعنا، ودعني وهو يبكي، وكذلك ودع أبيه وزوجته، لم أرَ زوجته تبكي وهي تودعه، إلا تلك المرة، حتى أنه ذهب لتوديع  بقية أقاربه، قبل أن يغادر القرية، عندها  شعرت بالخوف والقلق، ولم يكن مثل هذا الخوف لدى أسر الشباب الذي غادروا القرية معه".
+     </p>
+     <p>
+      كانت الساعة التاسعة صباحًا من يوم السبت 6/16/ 2021، عندما غادر عبد الحميد مع مجموعة  من رفاقه قريتهم (كوكبة) ذات التضاريس الوعرة،  وقد وصل عند غروب شمس يوم الأحد إلى منطقة عمله (الرقو) شمال صعدة، وهي الأخرى لا تختلف عن تضاريس منطقته، وهي بالإضافة إلى ذلك منطقة موبوءة بالكثير من الأمراض والأوبئة، مثل حمى الضنك وبعض الأمراض الجلدية، ولأنها محاذية للحدود السعودية، تشهد أحداثا مأسوية بشكل شبه يومي، إذ يصل إليها الكثير من الأشخاص الذين يحاولون التسلل عبر الحدود إلى السعودية، وهم في حالة مأساوية، قتلا وجرحى، وبهم من الرعب والخوف ما يصل حد الجنون، نتيجة الاستهداف المتعمد لهم من قبل سلاح حرس الحدود السعودي.
+     </p>
+     
+     
+     <div class="interview-question">الاتصال الأخير 
+     </div>
+    
+     <p>
+      تتابع والدته حديثها لنا، ولا شيء يطغى على كلامها سوى الحزن والأسى، تقول لأطياف " اتصل بنا في اليوم التالي لمغادرته القرية، أطمأن قلبي عندما اتصل ليبلغنا بوصوله فقلت له انتبه لنفسك، وتساءل عن حال زوجته وولديه، واعدا إياهم بمعاودة الاتصال بهم بعد صلاة العشاء "
+     </p>
+     <p>
+      وحسب تعبير والدة عبد الحميد اتصل بأسرته في الساعة العاشرة مساءً على غير عادته، فهم متعودون أن يتصل بهم في الصباح أو بعد الظهر، وانتابهم الخوف والقلق من اتصاله، فقد كان صوته متغير، يتنفس بسرعه، ويتكلم بقلق، اتصل وهو محاصر تحت نيران سلاح حرس الحدود السعودي، كان قد تعدى الحدود السعودية، إلا أنه فوجئ بالوضع المشدد للحرس السعودي، كانوا مستعدين والسلاح مجهز لقتل أي متسلل، أراد أن يرسل إشارة لزملائه، إلا أن تلك الإشارة كانت قاتلة، قتلته برصاصة قناص، ظل ينزف لساعات، ومنع الحرس زملاءه من محاولة إنقاذه، وسمح لهم بالوصول إليه، بعد أن فارق الحياة، حينها حُملَ إلى سوق (الرقو)، لتحمل جثته بعد ذلك على سيارة شاص إلى صعدة، تقول والدته "أي قلب كان يمتلكه ذلك الجندي الذي قتل ولدي، وتركه ينزف ويتعذب، لن أسامحه"، تضيف وكل كلامها تناهيد وبكاء " في اتصاله الأخير طلب مني ومن زوجته ومن كافة أبناء القرية المسامحة، واستوصانا بأولاده الإحسان في تربيتهم وتعليمهم".
+     </p>
+     <p>
+      عاشت أسرة عبد الحميد تلك الليلة في قلق لا يوصف، كان الوقت يمر عليها ككابوس، لم ينم أحد منهم، كانوا يتواصلون بأبناء القرية الذين يعملون هناك، وكانت الإجابات تتشابه لدى الجميع، سيعود الساعة التاسعة صباحًا ويتصل بكم، لكن الصباح حل عليهم بثقله وهمه.
+     </p>
+     <div class="interview-question">لحظة الصدمة 
+    </div>
+   
+     <p>
+      في الصباح الباكر من يوم  18/ 7/ 2021، وحين كانت الشمس تمد خيوطها الأولى على قرية عبد الحميد (كوكبة)  تلقى والده اتصالا من أحد شباب القرية، يتحدث بصوت متقطع وغير مفهوم، مصحوبا بالبكاء، وقتها أرتفع صوت الأب، وجثى على ركبتيه، وانهار بالبكاء، سارعت زوجته، لتسأله لماذا يبكي، وقد شعرت بأن ابنها أصابه مكروه، أجابها الأب بكلمتين "مات، مات"،  لم تتملك أم عبد الحميد قلبها، لقد وقع الخبر عليها كالصاعقة، أغمي عليها، وحينما صحت احتضنت طفلي عبد الحميد، شيماء ومحمد وهم يبكيان، وهي تقول "عبد الحميد لم يمت هو حي سيعود، أبوكم لم يمت ".
+     </p>
+     <p>
+      كان البكاء يصدر من كل بيت وكأن شباب القرية قد قتلوا جميعاً في هذه الحادثة، في منتصف اليوم التالي، وحينما كانت الشمس في كبد السماء، وصل جثمان عبد الحميد على سيارة شاص، بعد أن نُقل من على سيارة الإسعاف التي لن تستطيع أن تصل إلى قمة الجبل حيث مرقده الأخير، بسبب وعورة الطريق الجبلية،  وكان الناس في انتظار وصول جثة عبد الحميد، لقد  توافدوا من كل أرجاء المديرية، حينها حملوه على الأكتاف إلى أهله، والحزن يخيم على الجميع، القت أسرته وطفلاه شيماء ومحمد النظرة الأخيرة، ليحمل بعدها إلى مرقده الأخير بعد الصلاة عليه، عاد الناس لإكمال مراسيم التعزية، ولا حديث لهم سواء مأساة شبابهم، وملايين الشباب اليمني الذين أُوصدت أمامهم أبواب الرزق في الداخل، فحاولوا ترك الوطن، باحثين عن عيش كريم، لكن أقدراهم السيئة قادتهم من الجوع إلى الموت.
+     </p>
+   
+
+  </div>
+
+  
+  <!-- قسم الأكثر قراءة -->
+  <div class="most-read-section">
+    <div class="most-read-header">
+        <h2 class="section-title-tht">اقرأ أيضا</h2>
+    </div>
+    <div class="most-read-items">
+        <div class="most-read-item">
+            <a href="../health/helth1.html">
+                <img src="../health/helth1.png" alt="مقالة 1">
+            </a>
+            <a href="../health/helth1.html">الأخطاء الطبية...ضحايا بلا عدالة في اليمن</a>
+        </div>
+        <div class="most-read-item">
+          <a href="../society/kder.html">
+            <img src="../society/kder.jpg" alt="مقالة 2"></a>
+            <a href="../society/kder.html">التعليم في خدير: عندما يُصبح التلميذ معلّمًا
+            </a>
+        </div>
+        <div class="most-read-item">
+          <a href="../health/story2.html">
+            <img src="../health/story2.png" alt="مقالة 3"></a>
+            <a href="../health/story2.html">عائشة الكولي...من قلب الريف إلى بوابة المستقبل الطبي </a>
+        </div>
+        <div class="most-read-item">
+          <a href="../society/gwafy.html">
+          <img src="../society/gwafy1 (1).png" alt="مقالة 3"></a>
+          <a href="../society/gwafy.html">       مأرب تنتفض على قوافي الموت
+          </a>
+      </div>
+  
+      <div class="most-read-item">
+        <a href="../society/profile1.html">
+        <img src="../society/profile1.jpg" alt="مقالة 3"></a>
+        <a href="../society/profile1.html">       أفراح ناصر ...من الكتابة باسم مستعار إلى جوائز دولية بحرية الصحافة
+        </a>
+    </div>
+  
+  <div class="most-read-item">
+    <a href="../society/profile3.html">
+    <img src="../society/profile3.jpg" alt="مقالة 3"></a>
+    <a href="../society/profile3.html">       يحيى الحيمي..البدء من القمة
+    </a>
+  </div>
+  
+  <div class="most-read-item">
+    <a href="../society/threb.html">
+    <img src="../society/threb.png" alt="مقالة 3"></a>
+    <a href="../society/threb.html">       تهريب المخدرات في زمن الحرب... كارثة تسير إلى مزيد
+  
+    </a>
+  </div>
+  
+    </div>
+  </div>
+
+
+   
+  
+
+<!-- النشرة البريدية -->
+<div class="newsletter">
+  <h2>اشترك في نشرتنا البريدية</h2>
+  <form id="newsletter-form">
+    <input 
+      type="email" 
+      id="email-input"
+      name="email"
+      placeholder="atteaf0@gmail.com"
+      required
+    >
+    <button type="submit">اشتراك</button>
+  </form>
+  <div id="subscription-message" style="display: none;"></div>
+</div>
+
+<!--هنا مكان الفوتر سابقا-->
+<!-- تذييل الصفحة -->
+
+
+
+   
+
+<div class="national-symbol">
+  <img src="../شعار الجمهورية اليمنية الأصلي.png" alt="نسر يمني" class="eagle-icon">
+ 
+  <div class="designer-credit" style="text-align: right; margin-right: 20px; position: relative;">
+    <p style="margin: 0;">صمم الموقع بواسطة <span style="color: #CE1126; font-weight: bold;">[حاتم]</span></p>
+    
+    <button id="contactBtn" style="background: #CE1126; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-top: 5px; font-size: 12px;">
+      تواصل للتصميم <i class="fas fa-chevron-down"></i>
+    </button>
+    
+    <!-- قائمة الخيارات (ستظهر عند النقر) -->
+    <div id="contactMenu" style="display: none; position: absolute; right: 0; background: white; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 100; min-width: 150px;">
+      <button onclick="openWhatsApp()" 
+        style="background: none; border: none; color: #25D366; cursor: pointer; padding: 8px 12px; display: flex; align-items: center; gap: 5px;">
+    <i class="fab fa-whatsapp"></i> التواصل عبر واتساب
+</button>
+
+<script>
+function openWhatsApp() {
+    const phone = "00967773551347"; // استبدلها برقمك مع رمز الدولة
+    const message = "مرحباً، أنا مهتم بخدماتك التصميمية"; // رسالة افتراضية
+    
+    try {
+        // المحاولة الأولى (لأجهزة الكمبيوتر والجوال)
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+        
+        // إذا لم يفتح خلال ثانية، استخدم طريقة بديلة
+        setTimeout(() => {
+            if(!window.document.hasFocus()) {
+                window.location.href = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+            }
+        }, 1000);
+    } catch (e) {
+        // إذا فشل كل شيء، عرض الرقم للنسخ
+        navigator.clipboard.writeText(phone)
+            .then(() => alert(`تم نسخ الرقم: ${phone}\nيمكنك البحث عنه يدوياً في واتساب`))
+            .catch(() => prompt("الرجاء نسخ الرقم يدوياً للواتساب:", phone));
+    }
+}
+</script>
+      <a href="https://www.facebook.com/profile.php?id=100011494994763&locale=ar_AR" target="_blank" style="display: block; padding: 8px 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee;">
+        <i class="fab fa-facebook" style="color: #1877F2; margin-left: 5px;"></i> فيسبوك
+      </a>
+      <button onclick="sendEmail()" 
+        style="background: none; border: none; color: #CE1126; cursor: pointer; padding: 8px 12px; display: flex; align-items: center; gap: 5px;">
+    <i class="fas fa-envelope"></i> التواصل عبر الإيميل
+</button>
+
+<script>
+function sendEmail() {
+    const email = "hateemalsaqqaf@gmail.com";
+    try {
+        window.location.href = "mailto:" + email;
+    } catch (e) {
+        navigator.clipboard.writeText(email)
+            .then(() => alert("تم نسخ الإيميل: " + email))
+            .catch(() => prompt("الرجاء نسخ الإيميل يدوياً:", email));
+    }
+}
+window.location.href = `mailto:${email}?subject=طلب تصميم موقع&body=السلام عليكم%0D%0Aأرغب في...`;
+if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    navigator.clipboard.writeText(email);
+}
+</script>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- إضافة المزيد من البروفايلات لاحقًا -->
+    <footer class="footer">
+        <div class="container">
+            <p>جميع الحقوق محفوظة لأطياف &copy; 2025</p>
+            <!-- أيقونات وسائل التواصل الاجتماعي -->
+        <div class="social-media">
+          <a href="https://www.facebook.com/profile.php?id=61575507370318" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i> <!-- أيقونة فيسبوك -->
+          </a>
+          <a href="https://x.com/atteaf0" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i> <!-- أيقونة تويتر -->
+          </a>
+          <a href="https://www.instagram.com/htmlsqf?igsh=MTVybDR3Y2drdGwyNg==
+
+          " target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i> <!-- أيقونة انستغرام -->
+          </a>
+          <a href="https://www.youtube.com/@atteaf-w8e" target="_blank" aria-label="YouTube">
+              <i class="fab fa-youtube"></i> <!-- أيقونة يوتيوب -->
+          </a>
+
+      <!-- زر المشاركة -->
+      <div class="share-pin" onclick="shareContent()" title="مشاركة الرابط">
+        <i class="fas fa-share-alt"></i> <!-- أو استخدم أيقونة الدبوس -->
+      </div>
+
+      </div>
+
+      <nav class="footer-menu">
+        <ul>
+            <li><a href="../about_us/abut_us.html">من نحن</a></li>
+            <li><a href="../contact/contact.html">اتصل بنا</a></li>
+            <li><a href="../privacy-policy/privacy-policy.html">سياسة الخصوصية</a></li>
+        </ul>
+    </nav>
+</div>
+</footer>
+
+<script>
+  document.getElementById('share-btn').addEventListener('click', function() {
+      if (navigator.share) {
+          navigator.share({
+              title: 'الجمهورية اليمنية',
+              text: 'تعرف على الجمهورية اليمنية',
+              url: window.location.href
+          }).catch(err => {
+              console.error('Error sharing:', err);
+          });
+      } else {
+          alert('خاصية المشاركة غير مدعومة في متصفحك. يمكنك نسخ الرابط يدوياً.');
+      }
+  });
+  </script>
+
+<script src="../multimedia.js"></script>
+
+</body>
+
+
+
+
+</html>

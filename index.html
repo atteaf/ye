@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atteaf</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة أطياف</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Droid+Arabic+Naskh&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Badeen+Display&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+
+<style>
+  .download-section {
+    text-align: left;
+    margin: 20px;
+    direction: rtl;
+  }
+
+  .download-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .download-btn {
+    background-color: #d9534f; /* لون أحمر */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .download-btn:hover {
+    background-color: #c9302c; /* أحمر أغمق عند التمرير */
+  }
+</style>
+  </head>
+
+
+<body>
+  <script src="https://kit.fontawesome.com/91eada0414.js" crossorigin="anonymous"></script>
+
+<!--start header-->
+<header class="header">
+  <div class="top-header">
+    <div class="container">
+        <div class="email">
+            
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:atteaf0@gmail.com">atteaf0@gmail.com</a>
+          </div>
+        </div>
+        <div class="social-icons">
+          
+
+            <a href="https://www.facebook.com/profile.php?id=61575507370318"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/atteaf0"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/htmlsqf?igsh=MTVybDR3Y2drdGwyNg=="><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@atteaf-w8e"><i class="fab fa-youtube"></i></a>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- الحاوية السفلية -->
+<div class="header-divider"></div>
+<div class="bottom-header">
+  <div class="container">
+
+    <a href="index.html" class="logo">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="شعار الموقع">
+    </a>
+    
+  <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.bottom-header .menu ul');
+        navLinks.classList.toggle('active');
+    }
+</script>
+      <nav class="menu">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="navLinks">
+          
+           
+                  <li><a href="sport/sports.html">رياضة</a></li>
+                  <li><a href="Economy/economy.html">اقتصاد</a></li>
+                
+                  
+                  <li><a href="article/articles.html">رأي</a></li>
+                  <li><a href="multimedia/multimedia.html">وسائط متعددة</a></li>
+    
+                  <li><a href="health/health.html">صحة</a></li>
+                  <li><a href="culture/culture.html">ثقافة وفن</a></li>
+    
+    
+    
+    <li><a href="society/socity.html">مجتمع</a></li>
+    
+    <li><a href="news/news.html">أخبار</a></li>
+    
+    <li><a href="index.html">الرئيسية</a></li>
+<div class="search-container">
+  <button class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></button>
+  <div class="search-box" id="searchBox">
+      <input type="text" placeholder="بحث..." class="search-input">
+  </div>
+</div>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+ <!-- 
+ 
+ <div class="news-ticker">
+  <marquee>آخر الأخبار: حدث مهم ١ | حدث مهم ٢ | حدث مهم ٣</marquee>
+</div>
+شريط الأخبار العاجلة -->
+<!-- القسم الرئيسي -->
+<div class="hero-section">
+  <div class="main-news">
+      <img src="society/threb.png" alt="الخبر الرئيسي">
+      <a href="society/threb.html">
+      <h1>تهريب المخدرات في زمن الحرب..كارثة تسير إلى مزيد</h1></a>
+  </div>
+  <div class="sub-news">
+      <div class="sub-news-item">
+          <img src="news/news1.png" alt="خبر فرعي">
+          <a href="news/news1.html">
+          <h3>يمن موبايل توزع أرباحاً للمساهمين بنسبة هي الأعلى بسوق الاتصالات اليمنية
+          </h3>
+        </a>
+      </div>
+      <div class="sub-news-item">
+          <img src="news/news2.png" alt="خبر فرعي">
+          <a href="news/news2.html">
+          <h3>خلل كهربائي مفاجئ يضرب غرب أوروبا ويشل خدمات الهاتف والإنترنت
+          </h3>
+        </a>
+      </div>
+  </div>
+</div>
+
+<!-- قسم التحقيقات -->
+<div class="container">
+  <h2 class="section-title">مجتمع </h2>
+  <div class="content-grid">
+      <!-- بطاقات الأخبار تتكرر هنا -->
+      <div class="news-card">
+        <a href="society/profile1.html">
+          <img src="society/profile1.jpg" alt="تحقيق"></a>
+          <a href="society/profile1.html">
+          <h3>أفراح ناصر ...من الكتابة باسم مستعار إلى جوائز دولية بحرية الصحافة</h3></a>
+          <div class="meta"> مايو 2025 | كتبه: حاتم السقاف </div>
+      </div>
+      <!-- المزيد من البطاقات -->
+      <div class="news-card">
+        <a href="society/kder.html">
+        <img src="society/kder.jpg" alt="تحقيق"></a>
+        <a href="society/kder.html">
+        <h3>التعليم في خدير: عندما يُصبح التلميذ معلّمًا</h3>
+      </a>
+
+        <div class="meta"> مايو 2025 | كتبه: أمين الفارعي</div>
+    </div>
+
+    <div class="news-card">
+      <a href="society/story1.html">
+      <img src="society/story1.jpg" alt="تحقيق"></a>
+      <a href="society/story1.html">
+      <h3>رحلة الموت..مأساة بحث اليمنيين عن فرصة عمل في الخارج</h3>
+    </a>
+
+      <div class="meta"> مايو 2025 | كتبه: عبد الرحمن الشماع </div>
+  </div>
+
+  <div class="news-card">
+    <a href="society/alsokman.html">
+    <img src="society/alsokman.jpg" alt="تحقيق"></a>
+    <a href="society/alsokman.html">
+    <h3>"السُكمان" بن كفاح.. كافح الظروف وغلبته الحرب</h3>
+  </a>
+
+    <div class="meta"> مايو 2025 | كتبه: أمين الفارعي</div>
+</div>
+
+<div class="news-card">
+  <a href="society/gwafy.html">
+  <img src="society/gwafy1 (1).png" alt="تحقيق"></a>
+  <a href="society/gwafy.html">
+  <h3> مأرب تنتفض على قوافي الموت</h3>
+</a>
+  <div class="meta"> مايو 2025 | كتبه: حاتم السقاف </div>
+</div>
+
+<div class="news-card">
+  <a href="society/profile3.html">
+  <img src="society/profile3.jpg" alt="تحقيق"></a>
+  <a href="society/profile3.html">
+  <h3>يحي الحيمي...البدء من القمة</h3>
+</a>
+  <div class="meta"> مايو 2025 | كتبه:  حاتم السقاف</div>
+</div>
+
+
+  </div>
+</div>
+
+
+<!-- قسم الصحة -->
+<div class="container">
+  <h2 class="section-title">صحة</h2>
+  
+  <div class="health-single-article">
+    <div class="health-image-container"><a href="health/helth1.html">
+      <img src="health/helth1.png" alt="قصة صحية" class="health-featured-img"></a>
+      <div class="health-title-overlay">
+        <a href="health/helth1.html">
+        <h3>الأخطاء الطبية...ضحايا بلا عدالة في اليمن</h3></a>
+      </div>
+    </div>
+    
+    <div class="health-meta">
+      <span>مايو 2025 | كتبه: عبد الرحمن الشماع</span>
+    </div>
+    <div class="health-excerpt">
+      <p>عبير، ليست إلا نموذجًا واحدًا من بين آلاف اليمنيين الذين يدفعون ثمن الأخطاء الطبية في صمت، وبينما تتزايد المآسي، تظل المساءلة والعدالة غائبة، ويتحول الضحايا إلى مجرد أرقام – إن وُثقوا أصلاً – في بلد يعيش أزمة قانونية وصحية متشابكة، حيث يكون الجاني في كثير من الأحيان هو الحَكَم أيضًا.
+
+        ..</p>
+      <a href="health/helth1.html" class="health-read-more">قراءة المزيد</a>
+    </div>
+
+
+
+
+    <div class="health-image-container"><a href="health/story2.html">
+      <img src="health/story2.png" alt="قصة صحية" class="health-featured-img"></a>
+      <div class="economy-title-overlay">
+        <a href="health/story2.html">
+        <h3>عائشة الكولي...من قلب الريف إلى بوابة المستقبل الطبي</h3></a>
+      </div>
+    </div>
+    
+    <div class="health-meta">
+      <span>مايو 2025 | كتبه: مهيب الكولي</span>
+    </div>
+    <div class="health-excerpt">
+      <p>في قلب جبال محافظة حجة، وتحديدًا في قرية بيت الكولي، بمديرية كحلان عفار، وُلد حلم كبير بين طرقات وعرة وأحلام مكبلة بقيود الواقع، من هناك بدأت عائشة حميد الكولي رحلتها التعليمية، متحديةً الأعراف والصعوبات، وراسمةً ملامح قصة نجاح نادرة في تعليم الفتيات الريفيات في اليمن.
+
+      </p>
+      <a href="health/story2.html" class="health-read-more">قراءة المزيد</a>
+    </div>
+  </div>
+</div>
+<!-- قسم البودكاست الجديد -->
+<section class="podcast-section">
+  <div class="container">
+    <h2 class="section-title">بودكاست</h2>
+    
+    <div class="featured-podcast">
+      <div class="video-container">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/_3vM-whYdAo" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="podcast-info">
+        <h3>الحلقة 01: كيف تتعلم التسويق الإلكتروني من الصفر؟  </h3>
+        <div class="meta">مايو 2025 | تقديم: حاتم السقاف</div>
+        <p>نناقش في هذه الحلقة مع خبير التسويق الإلكتروني وتطوير الأعمال عبدالإله الشميري كيف شق طريقه في مجال التسويق الإلكتروني وكيف يمكنكم فعل ذلك، كما نناقش بعض استراتيجيات التسويق الناجعة....</p>
+        <div class="podcast-links">
+          <a href="#"><i class="fab fa-spotify"></i> Spotify</a>
+          <a href="#"><i class="fab fa-apple"></i> Apple Podcast</a>
+          <a href="#"><i class="fab fa-google"></i> Google Podcast</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+<h2 class="section-title">ثقافة وفن</h2>
+  
+  <div class="culture-single-article">
+    <div class="culture-image-container"><a href="culture/dialog1.html">
+      <div class="sport-hashtag">#حوار_خاص</div> <!-- هذه هي الإضافة الجديدة -->
+      <img src="culture/dialog1.jpg" alt="معرض فني" class="culture-featured-img"></a>
+      <div class="culture-title-overlay">
+      <a href="culture/dialog1.html">
+
+        <h3>هديل مانع لـ"أطياف": النقد أمر طبيعي لأي فنان لكن التعليقات السلبية تؤذيني</h3>
+      </a>
+      </div>
+    </div>
+    
+    <div class="culture-meta">
+      <span>مايو 2025 | حاورها:  أمين الفارعي</span>
+    </div>
+    <div class="culture-excerpt">
+      <p>انطلاقتي الأولى في عالم التمثيل كانت من الإذاعة المدرسية، التحقت بكلية الإعلام، لكنني لم أكمل تعليمي فيها لظروف شخصية، استمديت قوتي في عالم الفن من دعم عائلتي وأصدقائي الذين كانوا يشجعونني على الاستمرار، تعلمت من كل ممثل وممثلة قابلتهم، وكنت أحرص على التعلم من أخطائي، وللأسف المجتمع "اليمني" لا يتفهم دورك كفنان، ولا يستطيع الفصل بين الحياة الشخصية وبين العمل الفني، بهذه الجمل، عبرت الممثلة هديل مانع عن مسيرة حياتها الفنية، وبكل ثقة ووضوح تحدثت لنا في هذا الحوار المثير، عن جوانب هامة في حياتها الفنية والشخصية، فإلى تفاصيل الحوار:
+
+      </p>
+      <a href="culture/dialog1.html" class="culture-read-more">قراءة المزيد</a>
+    </div>
+
+
+
+
+    <div class="culture-image-container"><a href="culture/aldrama.html">
+      
+      <img src="culture/aldrama.png" alt="معرض فني" class="culture-featured-img"></a>
+      <div class="economy-title-overlay">
+      <a href="culture/aldrama.html">
+
+        <h3>الدراما الرمضانية: مضمون سطحي وأفكار لا تمت للواقع بصلة
+        </h3>
+      </a>
+      </div>
+    </div>
+    
+    <div class="culture-meta">
+      <span>أبريل 2025 | كتبه:  أمين الفارعي</span>
+    </div>
+    <div class="culture-excerpt">
+      <p>يعد شهر رمضان موسماً خصباً للإنتاج الدرامي في اليمن، حيث تتسابق العديد من القنوات لعرض أعمالها المختلفة، وقد شهد هذا العام ارتفاعا نسبيا في الإنتاج، قياسا بأعوام مضت، ولعل أبرز هذه المسلسلات (دروب المرجلة) الذي عرض بجزئه الثاني على قناة السعيدة، ومسلسل (الجمالية) الذي بثته قناة يمن شباب، ومسلسل (دُرة) الذي عرضته قناة المهرية، بالإضافة لمسلسل (طريق إجباري)، الذي يعتبر أول عمل درامي تنتجه قناة بلقيس، وإذا كانت هذه المسلسلات قد شهدت تباينا واضحا في تقييم متابعيها من الجمهور العام، بين راض ومنتقد، إلا أن الأهم هو تقييم المتخصصين وذي الخبرة، "أطياف" استطلعت أراء نخبة من الأدباء والمهتمين بالدراما عن المسلسلات التي عرضت في رمضان الفائت، من حيث أفكارها وجودتها شكلا ومضمونا.
+
+
+
+      </p>
+      <a href="culture/aldrama.html" class="culture-read-more">قراءة المزيد</a>
+    </div>
+
+  </div>
+
+
+  
+</div>
+</div>
+
+
+
+<!-- قسم رياضة -->
+<div class="container">
+  <h2 class="section-title">رياضة</h2>
+  
+  <div class="sport-single-article">
+    <div class="sport-image-container">
+      <div class="sport-hashtag">#حوار_خاص</div> <!-- هذه هي الإضافة الجديدة -->
+      <div class="sport-title-overlay"><a href="sport/dialog2.html">
+        <h3>الكابتن علي النونو لـ"أطياف" "وزير الرياضة ليس رياضيا ومن يعملون في الرياضة ليس لهم علاقة بها"</h3></a>
+      </div>
+      <a href="sport/dialog2.html">
+      <img src="sport/dialog2.jpeg" alt="حدث رياضي" class="sport-featured-img"></a>
+    </div>
+    
+    <div class="sport-meta">
+      <span>مايو 2025 | حاوره: عبد الرحمن الشماع </span>
+    </div>
+    <div class="sport-excerpt">
+      <p>كيف يقيّم الكابتن النونو أداء منتخبنا الوطني، وموطن القوة والضعف فيه، وكيف يمكن بناء منتخب قوي ومنافس وند للمنتخبات العربية الأخرى، وما هي توقعاته لأداء المنتخب اليمني في البطولات الرياضية القادمة، ولمعرفة ذلك، حاورت "أطياف" أسطورة الكرة اليمنية "علي النونو"، واستجلت منه رأيه في تطوير المنتخب اليمني، ورأيه في بعض الشؤون الرياضية.</p>
+      <a href="sport/dialog2.html" class="sport-read-more">قراءة المزيد</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- قسم اقتصاد -->
+<div class="container">
+  <h2 class="section-title">اقتصاد</h2>
+  
+  <div class="economy-content-grid">
+    <!-- البطاقة الأولى -->
+    <div class="economy-card">
+      <a href="Economy/economy1.html">
+        <img src="Economy/economy1.jpg" alt="خبر اقتصادي">
+      </a>
+      <div class="economy-title-overlay">
+        <a href="Economy/economy1.html"><h3>بعد رسوم ترامب الجمركية...هل ستحافظ اليمن على نكهة قهوتها في الأسواق العالمية
+        </h3></a>
+      </div>
+      <div class="economy-meta">
+        <span>مايو 2025 | كتبه:  عبد الرحمن الشماع</span>
+      </div>
+    </div>
+    
+    <!-- البطاقة الثانية -->
+    <div class="economy-card">
+      <a href="Economy/economy2.html">
+        <img src="Economy/economy2.png" alt="خبر اقتصادي">
+      </a>
+      <div class="economy-title-overlay">
+        <a href="Economy/economy2.html"><h3>في الحرب التجارية المستعرة بينهما: هل ستصمد الصين وتضعف أمريكا؟
+        </h3></a>
+      </div>
+      <div class="economy-meta">
+        <span>مايو 2025 | كتبه: عبد الرحمن الشماع </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- قسم الوسائط المتعددة -->
+<div class="container">
+  <h2 class="section-title">وسائط متعددة</h2>
+  
+  <!-- تبويبات التنقل بين الأقسام -->
+  <div class="multimedia-tabs">
+    <button class="tab-btn active" data-tab="video">🎥 فيديو</button>
+    <button class="tab-btn" data-tab="gallery">📷 قضايا مصورة</button>
+    <button class="tab-btn" data-tab="infographic">📊 إنفوجرافيك</button>
+  </div>
+
+  <!-- قسم الفيديو -->
+  <div id="video" class="tab-content active">
+    <div class="video-grid">
+      <!-- فيديو 1 -->
+      <div class="video-item">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/fTW3rucRZU4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-duration">3:15 دقيقة</span>
+          <h3>أهالي كحلان حجة يطالبون بوقف الحفر العشوائي للآبار.."لم نعد نجد شربة ماء"
+          </h3>
+          <div class="video-meta">
+            <span>مايو 2025</span>
+            <p>تقرير: مهيب الكولي</p>
+
+            <div class="social-share">
+              <a href="https://www.facebook.com/profile.php?id=61575507370318"><i class="fab fa-facebook"></i></a>
+              <a href="https://x.com/atteaf0"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- فيديو 2 -->
+      <div class="video-item">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/LeyN07mDyMc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-info">
+          <span class="video-duration">4:46 دقيقة</span>
+          <h3>7 أشخاص في غرفة مترين.. مأساة أسرة شردتها الأمطار</h3>
+          <div class="video-meta">
+            <span>مايو 2025</span>
+            <p>تقرير: مهيب الكولي</p>
+            <div class="social-share">
+              <a href="https://www.facebook.com/profile.php?id=61575507370318"><i class="fab fa-facebook"></i></a>
+              <a href="https://x.com/atteaf0"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- قسم الصور -->
+  <div id="gallery" class="tab-content">
+    <div class="gallery-grid">
+      <!-- صورة 1 -->
+      <div class="gallery-item"><a href="multimedia/pict1.html">
+        <img src="multimedia/منازل 01.png" alt="افتتاح المشروع الجديد" class="zoomable"></a>
+        <div class="gallery-caption">
+          <a href="multimedia/pict1.html">
+          <p>منازل بمحافظة المحويت تحتمي بجبال آيلة للسقوط
+          </p>
+        </a>
+          <small>تصوير: عبد الرحمن الشماع </small>
+        </div>
+      </div>
+      
+      <!-- صورة 2 -->
+      <div class="gallery-item"><a href="multimedia/pict2.html">
+        <img src="multimedia/الكتابة على المقاعد الدراسية 01.png" alt="ورشة العمل السنوية" class="zoomable"></a>
+        <div class="gallery-caption">
+          <a href="multimedia/pict2.html">
+          <p>الكتابة على المقاعد الدراسية...مدونات العابثين
+          </p>
+        </a>
+          <small>تصوير: عبد الرحمن الشماع </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- قسم الإنفوجرافيك -->
+  <div id="infographic" class="tab-content">
+    <div class="infographic-grid">
+      <!-- إنفوجرافيك 1 -->
+      <div class="infographic-item">
+        <img src="multimedia/أضرار البنية التحيتية غزة.jpg" alt="إحصائيات النمو الاقتصادي">
+        <div class="zoom-hint">اضغط للتكبير</div>
+        <h4>أضرار البنية التحتية في قطاع غزة خلال 575 يوما من العدوان
+        </h4>
+        <div class="designer-credit"> تصميم : <span> مهيب الكولي </span></div>
+      </div>
+      
+      <!-- إنفوجرافيك 2 -->
+      <div class="infographic-item">
+        <img src="multimedia/55555رسوم جمارك ترامب-01.jpg" alt="توزيع الاستثمارات">
+        <div class="zoom-hint">اضغط للتكبير</div>
+        <h4>أبرز الدول العربية المستهدفة بالرسوم الجمركية التي فرضها ترامب</h4>
+        <div class="designer-credit"> تصميم : <span>حاتم السقاف </span></div>
+      </div>
+      
+      <!-- إنفوجرافيك 3 -->
+      <div class="infographic-item">
+        <img src="multimedia/إنفوغرافيك 02البطالة.jpg" alt="مؤشرات الأسواق">
+        <div class="zoom-hint">اضغط للتكبير</div>
+        <h4>أعلى وأدنى معدلات البطالة في العالم العربي عام 2024</h4>
+        <div class="designer-credit"> تصميم : <span>حاتم السقاف </span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- زر عرض الكل -->
+  <div class="view-all">
+    <a href="multimedia/multimedia.html" class="view-all-btn">عرض جميع الوسائط</a>
+  </div>
+</div>
+
+
+
+<!-- قسم مقالات الرأي -->
+<div class="container">
+  <h2 class="section-title">مقالات الرأي</h2>
+  
+  <div class="opinion-articles">
+    <!-- مقال 1 -->
+    <div class="opinion-article">
+      <div class="author-image">
+        <a href="article/article1.html">
+        <img src="author/hattem.png" alt="صورة الكاتب"></a>
+      </div>
+      <div class="article-content">
+        <a href="article/article1.html">
+        <h3 class="article-title">المرأة ليست خزنة</h3></a>
+        <div class="article-meta">
+          <span class="author-name"> حاتم السقاف</span>
+          <span class="article-date">مايو 2025</span>
+        </div>
+        <p class="article-excerpt">
+          إن كَدَّ الملايين من الشباب يُصلب على نحور النساء، يُلف على خصورهن، يُعلق في أطرافهن، وليس ثمة جدوى من ذلك على اقتصاد البلد.
+        </p>
+        <a href="article/article1.html" class="read-more">قراءة المقال</a>
+      </div>
+    </div>
+    
+    <!-- مقال 2 -->
+    <div class="opinion-article">
+      <div class="author-image">
+        <a href="article/article2.html">
+        <img src="author/insaf.png" alt="صورة الكاتب"></a>
+      </div>
+      <div class="article-content">
+        <a href="article/article2.html">
+        <h3 class="article-title">الرجال لم يخلقوا للحضارة</h3></a>
+        <div class="article-meta">
+          <span class="author-name"> إنصاف عومان</span>
+          <span class="article-date">مايو 2025</span>
+        </div>
+        <p class="article-excerpt">
+          منذ فجر التاريخ، والرجل لا يعرف طعمًا للسكينة. فالهندسة الوراثية صاغته ليكون مقاتلًا، صيادًا، عاملاً، منشغلاً بالميدان أكثر من الفكر، وبالفعل أكثر من القول. ليس ذلك تهمةً، بل هو توصيف لحقيقة بيولوجية ونفسية
+        </p>
+        <a href="article/article2.html" class="read-more">قراءة المقال</a>
+      </div>
+    </div>
+
+
+
+    <!-- مقال 3 -->
+    <div class="opinion-article">
+      <div class="author-image">
+        <a href="article/article4.html">
+        <img src="author/muheb.jpg" alt="صورة الكاتب"></a>
+      </div>
+      <div class="article-content">
+        <a href="article/article4.html">
+        <h3 class="article-title">غزة بين إسناد اليمنيين..وتخاذل حكام العرب
+        </h3></a>
+        <div class="article-meta">
+          <span class="author-name"> مهيب الكولي</span>
+          <span class="article-date">مايو 2025</span>
+        </div>
+        <p class="article-excerpt">
+          في كل عدوان على غزة، تتكرر المشاهد ذاتها: جماهير عربية غاضبة تملأ الشوارع، ترفع الأعلام الفلسطينية، وتهتف للحرية، بينما تسير الحكومات على خيط رفيع بين التضامن اللفظي والحسابات السياسية الدقيقة. مقابل ذلك، نجد الولايات المتحدة تقدم دعمًا ثابتًا، واضحًا ومباشرًا للعدو الصهيوني، لا تحكمه اعتبارات أخلاقية ولا حسابات للرأي العام العالمي.
+
+
+        </p>
+        <a href="article/article4.html" class="read-more">قراءة المقال</a>
+      </div>
+    </div>
+
+<!-- مقال 4 -->
+<div class="opinion-article">
+  <div class="author-image">
+    <a href="article/article3.html">
+    <img src="author/autherdialog2.jpg" alt="صورة الكاتب"></a>
+  </div>
+  <div class="article-content">
+    <a href="article/article3.html">
+    <h3 class="article-title">الشهرة المفاجئة بالونة ستنفجر
+    </h3>
+  </a>
+    <div class="article-meta">
+      <span class="author-name"> أمين الفارعي</span>
+      <span class="article-date">مايو 2025</span>
+    </div>
+    <p class="article-excerpt">
+      في عالم التواصل الاجتماعي، لم تعد الشهرة تولد من عباءة الفن أو الفكرة، بل من فقاعة، الفقاعة التي قد تلمع لحظة ثم تنفجر أو تتسع حتى تطمس ملامح صاحبها وتتركه عاريًا أمام جمهور لا يرحم.
+
+
+    </p>
+    <a href="article/article3.html" class="read-more">قراءة المقال</a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+
+
+
+<!-- النشرة البريدية -->
+<div class="newsletter">
+  <h2>اشترك في نشرتنا البريدية</h2>
+  <form id="newsletter-form">
+    <input 
+      type="email" 
+      id="email-input"
+      name="email"
+      placeholder="atteaf0@gmail.com"
+      required
+    >
+    <button type="submit">اشتراك</button>
+  </form>
+  <div id="subscription-message" style="display: none;"></div>
+</div>
+
+<!--هنا مكان الفوتر سابقا-->
+<!-- تذييل الصفحة -->
+
+
+
+
+<div id="infographic-modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="infographic-full">
+  <div id="caption"></div>
+</div>
+
+   
+
+<div class="national-symbol">
+  <img src="شعار الجمهورية اليمنية الأصلي.png" alt="نسر يمني" class="eagle-icon">
+ 
+
+  <div class="designer-credit" style="text-align: right; margin-right: 20px; position: relative; font-family: Arial, Helvetica, sans-serif;">
+    <p style="margin: 0;">صمم الموقع بواسطة <span style="color: #CE1126; font-weight: bold;">[حاتم]</span></p>
+    
+    <button id="contactBtn" style="background: #CE1126; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-top: 5px;  font-size: 12px;">
+      تواصل للتصميم <i class="fas fa-chevron-down"></i>
+    </button>
+    
+    <!-- قائمة الخيارات (ستظهر عند النقر) -->
+    <div id="contactMenu" style="display: none; position: absolute; right: 0; background: white; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 100; min-width: 150px;">
+      <button onclick="openWhatsApp()" 
+        style="background: none; border: none; color: #25D366; cursor: pointer; padding: 8px 12px; display: flex; align-items: center; gap: 5px;">
+    <i class="fab fa-whatsapp"></i> التواصل عبر واتساب
+</button>
+
+<script>
+function openWhatsApp() {
+    const phone = "00967773551347"; // استبدلها برقمك مع رمز الدولة
+    const message = "مرحباً، أنا مهتم بخدماتك التصميمية"; // رسالة افتراضية
+    
+    try {
+        // المحاولة الأولى (لأجهزة الكمبيوتر والجوال)
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+        
+        // إذا لم يفتح خلال ثانية، استخدم طريقة بديلة
+        setTimeout(() => {
+            if(!window.document.hasFocus()) {
+                window.location.href = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+            }
+        }, 1000);
+    } catch (e) {
+        // إذا فشل كل شيء، عرض الرقم للنسخ
+        navigator.clipboard.writeText(phone)
+            .then(() => alert(`تم نسخ الرقم: ${phone}\nيمكنك البحث عنه يدوياً في واتساب`))
+            .catch(() => prompt("الرجاء نسخ الرقم يدوياً للواتساب:", phone));
+    }
+}
+</script>
+      <a href="https://www.facebook.com/profile.php?id=100011494994763&locale=ar_AR" target="_blank" style="display: block; padding: 8px 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee;">
+        <i class="fab fa-facebook" style="color: #1877F2; margin-left: 5px;"></i> فيسبوك
+      </a>
+      <button onclick="sendEmail()" 
+        style="background: none; border: none; color: #CE1126; cursor: pointer; padding: 8px 12px; display: flex; align-items: center; gap: 5px;">
+    <i class="fas fa-envelope"></i> التواصل عبر الإيميل
+</button>
+
+<script>
+function sendEmail() {
+    const email = "hateemalsaqqaf@gmail.com";
+    try {
+        window.location.href = "mailto:" + email;
+    } catch (e) {
+        navigator.clipboard.writeText(email)
+            .then(() => alert("تم نسخ الإيميل: " + email))
+            .catch(() => prompt("الرجاء نسخ الإيميل يدوياً:", email));
+    }
+}
+window.location.href = `mailto:${email}?subject=طلب تصميم موقع&body=السلام عليكم%0D%0Aأرغب في...`;
+if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    navigator.clipboard.writeText(email);
+}
+</script>
+    </div>
+  </div>
+</div>
+
+
+<div class="download-section">
+  <p> لتثبيت تطبيق منصة أطياف على هاتفك</p>
+  <a href="https://apk.e-droid.net/apk/app3574249-h50w16.apk?v=1" class="download-btn" download>اضغط هنا</a>
+</div>
+
+    <!-- إضافة المزيد من البروفايلات لاحقًا -->
+    <footer class="footer">
+      <div class="container">
+          <p>جميع الحقوق محفوظة لأطياف &copy; 2025</p>
+          <!-- أيقونات وسائل التواصل الاجتماعي -->
+      <div class="social-media">
+
+        <a href="https://www.facebook.com/profile.php?id=61575507370318" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i> <!-- أيقونة فيسبوك -->
+        </a>
+        <a href="https://x.com/atteaf0" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i> <!-- أيقونة تويتر -->
+        </a>
+        <a href="https://www.instagram.com/htmlsqf?igsh=MTVybDR3Y2drdGwyNg==
+
+        " target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i> <!-- أيقونة انستغرام -->
+        </a>
+        <a href="https://www.youtube.com/@atteaf-w8e" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i> <!-- أيقونة يوتيوب -->
+        </a>
+
+      <!-- زر المشاركة -->
+      <div class="share-pin" onclick="shareContent()" title="مشاركة الرابط">
+        <i class="fas fa-share-alt"></i> <!-- أو استخدم أيقونة الدبوس -->
+      </div>
+
+      </div>
+
+      <nav class="footer-menu">
+        <ul>
+            <li><a href="about_us/abut_us.html">من نحن</a></li>
+            <li><a href="contact/contact.html">اتصل بنا</a></li>
+            <li><a href="privacy-policy/privacy-policy.html">سياسة الخصوصية</a></li>
+        </ul>
+    </nav>
+</div>
+</footer>
+        </div>
+      </footer>
+      <script src="multimedia.js"></script>
+      <!-- نافذة العرض (Modal) -->
+<div class="modal" id="imageModal">
+  <img src="" alt="عرض الصورة" id="modalImage">
+</div>
+<script>
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const images = document.querySelectorAll('.infographic-item img');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+    });
+  });
+
+  // إغلاق عند النقر خارج الصورة
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+<script>
+  document.getElementById('share-btn').addEventListener('click', function() {
+      if (navigator.share) {
+          navigator.share({
+              title: 'الجمهورية اليمنية',
+              text: 'تعرف على الجمهورية اليمنية',
+              url: window.location.href
+          }).catch(err => {
+              console.error('Error sharing:', err);
+          });
+      } else {
+          alert('خاصية المشاركة غير مدعومة في متصفحك. يمكنك نسخ الرابط يدوياً.');
+      }
+  });
+  </script>
+
+</body>
+
+
+
+
+</html>

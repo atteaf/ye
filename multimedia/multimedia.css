@@ -1,0 +1,789 @@
+/* إعادة تعيين التنسيقات */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Almarai", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: right; /* محاذاة النص إلى اليمين */
+    direction: rtl; /* النص من اليمين إلى اليسار */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* الحاوية العلوية */
+.top-header {
+    padding: 10px 0;
+    background-color: #111;
+background-image: linear-gradient(to left,red, white, black );
+
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: ltr; /* إعادة تعيين اتجاه النص للعناصر المحددة */
+}
+
+.top-header .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.top-header .email i {
+    color: #fff;
+}
+
+.top-header .social-icons {
+    display: flex;
+    gap: 15px;
+    z-index: 2;
+}
+
+.top-header .social-icons a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.top-header .social-icons a:hover {
+    color: #e41a1a;
+}
+
+/* الخط الفاصل */
+.header-divider {
+    height: 2px;
+    background-color: #eedede;
+}
+
+/* الحاوية السفلية */
+.bottom-header {
+    padding: 10px 0;
+    background-color: #000;
+    background-image: linear-gradient(to left, red, white, black);
+
+}
+
+.bottom-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    direction: ltr;
+}
+
+.bottom-header .logo {
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #CE1126, #FFFFFF, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img {
+    height: 450%; /* تعديل الارتفاع حسب الحاجة */
+    max-width: 100%; /* حتى لا يتجاوز العرض الحاوية */
+    object-fit: contain; /* الحفاظ على الأبعاد */
+    margin-top: 15px;
+}
+    
+.bottom-header .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 29px;
+}
+
+.bottom-header .menu ul li a {
+    color: #0a66ef;
+    font-family: Arial, sans-serif;
+   
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.bottom-header .menu ul li a:hover {
+    color: #f3ecec;
+    background-color: #CE1126;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: inline-block; /* لمنع تمدد العناصر */
+}
+
+
+
+
+/* تنسيق القائمة */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; 
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.menu ul li a:hover {
+    color: #ccc;
+}
+
+/* زر القائمة */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+padding: top 1px;
+    right: 10px;
+    z-index: 1001; 
+}
+
+/* القائمة المنسدلة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .bottom-header .menu ul {
+        display: none;
+        flex-direction: column-reverse;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    .bottom-header .menu ul.active {
+        display: flex;
+    }
+
+    .bottom-header .menu ul li {
+        margin: 0 100px;
+        text-align: center;
+        background-color:rgb(0, 255, 145);
+    }
+}
+.bottom-header .menu ul li :hover{
+    background-color: black;
+}
+
+/* باقي التنسيقات */
+.email a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.email a:hover {
+    color: #ccc;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.search-icon:hover {
+    color: #ccc;
+}
+
+.search-box {
+    display: none;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    width: 150px;
+}
+
+.search-input::placeholder {
+    color: #ccc;
+}
+
+/* تذييل الصفحة */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu ul li {
+    margin-left: 20px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيقات صفحة البروفايل*/
+
+/* تعيين الخطوط والخلفية العامة */
+body {
+    font-family: "Almarai", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* تحديد الاتجاه من اليمين إلى اليسار */
+    text-align: right; /* محاذاة النصوص إلى اليمين */
+}
+
+
+
+
+
+
+
+
+/* أنماط المحتوى الرئيسي */
+.section {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 15px;
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .section-header img.icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* نسبة 16:9 */
+    margin-bottom: 15px;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 0;
+  }
+  
+  .video-info, .image-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .video-info h3, .image-info h3 {
+    margin-bottom: 5px;
+  }
+  
+  .author {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .video-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .video-card {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+  
+  .images-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-card {
+    flex: 0 0 calc(50% - 10px); /* 50% للصورة مع طرح نصف قيمة الـ gap */
+    max-width: calc(50% - 10px); /* للتأكد من أن الصور لن تتجاوز نصف المساحة مع التباعد */
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+  @media (max-width: 768px) {
+    .video-card, .image-card {
+      max-width: 100%;
+    }
+  }
+  
+  
+  .images-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* نضيفها للسماح بالتفاف العناصر إذا لزم الأمر */
+}
+
+.image-card {
+    flex: 0 0 calc(50% - 10px); /* صورتان في الصف مع تباعد */
+    max-width: calc(50% - 10px);
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* عند الشاشات الصغيرة (مثل الجوال) */
+@media (max-width: 768px) {
+    .image-card {
+        flex: 0 0 100%; /* تأخذ كل الصورة عرض الشاشة بالكامل */
+        max-width: 100%; /* عرض كامل */
+        height: 100%;
+    }
+    .image-card img {
+        height: auto; /* استعادة الارتفاع التلقائي */
+    }
+}
+
+
+
+  /* تنسيق عمودي بعرض ثابت */
+.vertical-infographics {
+    display: flex;
+    flex-direction: column; /* يعرض العناصر عموديًا */
+    gap: 30px; /* مسافة بين العناصر */
+    align-items: center; /* توسيط الأفقي */
+}
+
+.infographic-item {
+    width: 1200px; /* عرض ثابت كما طلبت */
+    max-width: 100%; /* لمنع التجاوز في الشاشات الصغيرة */
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.infographic-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.infographic-item .info {
+    padding: 15px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+/* تنسيقات قسم الإنفوجرافيك */
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-header i.fa-chart-pie {
+    font-size: 28px;
+    color: #4CAF50; /* لون أخضر */
+    margin-left: 10px;
+  }
+  
+  .section-header h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .vertical-infographics {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .infographic-item {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .infographic-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .infographic-item .info {
+    padding: 15px;
+    background: #f9f9f9;
+  }
+  
+  .infographic-item .info h3 {
+    margin: 0 0 10px 0;
+    color: #222;
+    font-size: 20px;
+  }
+  
+  .infographic-item .info p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+  }
+
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+  a:hover{
+    color: #CE1126;
+  }
+
+
+
+
+
+  
+/* تهيئة عامة - خطوط وألوان */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #C00;
+  --secondary-color: #333;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+}
+
+
+/* النشرة البريدية */
+.newsletter {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Almarai", sans-serif;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  /* تجاوب مع الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .hero-section {
+      grid-template-columns: 1fr;
+    }
+    
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .newsletter input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  
+  a{
+    text-decoration: none;
+    color: #000000;
+  }
+  a:hover{
+    color: #CE1126;
+  }
+  
+  /* وضع هذا في ملف CSS الخاص بك */
+  .footer ~ ul, 
+  .footer ~ li, 
+  .newsletter + ul, 
+  .newsletter + li {
+    display: none !important;
+  }
+  
+  
+  .social-share-container {
+      display: flex;
+      align-items: center;  /* محاذاة رأسية */
+      gap: 15px;           /* مسافة بين العناصر */
+      margin: 15px 0;
+  }
+  
+  .social-media {
+      display: flex;
+      gap: 10px;           /* مسافة بين الأيقونات */
+  }
+  
+  .social-media a {
+      color: #fff;
+      font-size: 20px;
+      transition: 0.3s;
+  }
+  
+  .share-button {
+      background: #4267B2;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+  }
+  
+  .white-stripe {
+    /* تأثيرات إضافية */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  /* تنسيقات العناصر الداخلية */
+  .national-symbol {
+    text-align: center;
+    
+  }
+  
+  .national-symbol p{
+   font-size: 16px;
+
+  }
+
+  .container p{
+    font-size: 16px;
+  }
+  .eagle-icon {
+    width: 100px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .eagle-icon{
+    visibility: hidden; /* يخفي المحتوى مع الحفاظ على المساحة */
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* حجم أساسي للأيقونة */
+  .share-button i {
+    font-size: 7px; /* الحجم الافتراضي */
+  }
+  
+  /* تعديل الحجم للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .share-button i {
+      font-size: 14px; /* حجم أصغر للجوال */
+    }
+    
+    .share-button {
+      padding: 5px 10px; /* تعديل حجم الزر نفسه */
+      font-size: 12px; /* حجم نص أصغر */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .social-media-wrapper {
+      text-align: center;
+    }
+    
+    .social-media {
+      display: inline-flex; /* يحافظ على التنسيق الأفقي */
+    }
+  }
+  
+  .social-container {
+    display: flex;
+    align-items: center; /* يضمن محاذاة جميع العناصر */
+    gap: 10px;
+  }
+  
+  .share-pin {
+    margin: 0;
+    padding: 0;
+    line-height: 1; /* يمنع أي فراغ غير ضروري */
+  }
+  
+  .share-pin {
+    display: inline-flex; /* بدلاً من inline-block */
+    align-items: center; /* محاذاة رأسية */
+    vertical-align: middle; /* محاذاة مع العناصر المجاورة */
+    position: relative;
+    top: 1px; /* تعديل دقيق للموقع */
+  }
+  
+  
+  .yemen-stats {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Almarai", sans-serif;
+  }
+  .stat-item {
+    text-align: center;
+  }
+  .number {
+    font-size: 2rem;
+    color: #CE1126;
+    font-weight: bold;
+  }
+  .yemen-stats {
+    display: flex;
+    justify-content: space-around;
+    position: relative; /* هذه السطر ضروري */
+    padding-bottom: 40px; /* لتجنب تداخل المحتوى */
+  }
+  
+
+  /* تنسيقات شريط المشاركة */
+.share-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .share-options {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .share-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .share-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .facebook { background: #3b5998; color: white; }
+  .twitter { background: #1da1f2; color: white; }
+  .whatsapp { background: #25d366; color: white; }
+  .copy { background: #555; color: white; }
+  
+  .share-close {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background: #CE1126;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }

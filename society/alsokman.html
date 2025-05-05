@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atteaf</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="singles.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البروفايلات</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Droid+Arabic+Naskh&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Badeen+Display&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+  </head>
+
+
+<body dir="rtl">
+  <script src="https://kit.fontawesome.com/91eada0414.js" crossorigin="anonymous"></script>
+
+<!--start header-->
+<header class="header">
+  <div class="top-header">
+    <div class="container">
+        <div class="email">
+            
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:atteaf0@gmail.com">atteaf0@gmail.com</a>
+          </div>
+        </div>
+        <div class="social-icons">
+          
+          <a href="https://www.facebook.com/profile.php?id=61575507370318"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/atteaf0"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/htmlsqf?igsh=MTVybDR3Y2drdGwyNg=="><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@atteaf-w8e"><i class="fab fa-youtube"></i></a>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- الحاوية السفلية -->
+<div class="header-divider"></div>
+<div class="bottom-header">
+  <div class="container">
+
+    <a href="index.html" class="logo">
+      <a href="index.html" class="logo">
+        <img src="../logo.png" alt="شعار الموقع">
+    </a>
+  <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.bottom-header .menu ul');
+        navLinks.classList.toggle('active');
+    }
+</script>
+      <nav class="menu">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="navLinks">
+          
+           
+                  <li><a href="../sport/sports.html">رياضة</a></li>
+                  <li><a href="../Economy/economy.html">اقتصاد</a></li>
+                
+                  
+                  <li><a href="../article/articles.html">رأي</a></li>
+                  <li><a href="../multimedia/multimedia.html">وسائط متعددة</a></li>
+    
+                  <li><a href="../health/health.html">صحة</a></li>
+                  <li><a href="../culture/culture.html">ثقافة وفن</a></li>
+    
+    
+    
+    <li><a href="../society/socity.html">مجتمع</a></li>
+    
+    <li><a href="../news/news.html">أخبار</a></li>
+    
+    <li><a href="../index.html">الرئيسية</a></li>
+<div class="search-container">
+  <button class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></button>
+  <div class="search-box" id="searchBox">
+      <input type="text" placeholder="بحث..." class="search-input">
+  </div>
+</div>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+
+
+
+<!--هنا مكان الفوتر سابقا-->
+<!-- تذييل الصفحة -->
+<!-- صندوق المحتوى الأساسي -->
+
+<!-- الحاوية الأساسية -->
+<div class="main-wrapper">
+  <!-- صورة البروفايل بحجم 1500px -->
+  <div class="profile-header">
+    <h1 class="title">"السُكمان" بن كفاح.. كافح الظروف وغلبته الحرب</h1>
+    
+      <img src="alsokman.jpg" alt="عنوان البروفايل" class="profile-cover">
+    </div>
+ <!-- معلومات الكاتب -->
+ <div class="author-info">
+  <a href="all-articles.html">
+      <img src="../author/autherdialog2.jpg" alt="اسم الكاتب" class="author-img">
+  </a>
+  <a href="all-articles.html" class="author-name">أمين الفارعي</a>
+  
+<!-- إضافة أيقونات التواصل الاجتماعي هنا -->
+<div class="author-social-icons">
+  <a href="#" class="whatsapp" id="whatsapp-share">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="#" class="facebook" id="facebook-share">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="mailto:atteaf0@gmail.com" class="email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="#" class="share" id="share-btn">
+    <i class="fas fa-share-alt"></i>
+  </a>
+</div>
+</div>
+
+</div>
+<script>
+  // كود مشاركة الواتساب
+  document.addEventListener('DOMContentLoaded', function() {
+    const whatsappBtn = document.getElementById('whatsapp-share');
+    if(whatsappBtn) {
+      whatsappBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent("اقرأ هذا المقال المميز: " + document.title);
+        window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+      });
+    }
+  
+    // كود مشاركة الفيسبوك
+    const facebookBtn = document.getElementById('facebook-share');
+    if(facebookBtn) {
+      facebookBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = encodeURIComponent(window.location.href);
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+      });
+    }
+  
+    // كود المشاركة العامة
+    const shareBtn = document.getElementById('share-btn');
+    if(shareBtn) {
+      shareBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            text: 'اكتشف هذا المقال الرائع',
+            url: window.location.href,
+          })
+          .catch(err => console.error('حدث خطأ في المشاركة:', err));
+        } else {
+          // حل بديل للمتصفحات التي لا تدعم navigator.share
+          const shareUrl = `mailto:?subject=${encodeURIComponent(document.title)}&body=${encodeURIComponent(window.location.href)}`;
+          window.location.href = shareUrl;
+        }
+      });
+    }
+  });
+  </script>
+
+  <!-- صندوق محتوى البروفايل -->
+  <div class="content-box">
+<p>
+    حين توفي والده قبل عشر سنوات، وجد الطفل محمد الملقب بـ "السُكمان" نفسه
+     أمام مهمة هي أكبر من عمره
+      الذي لم يتعدَ حينها 12 عاما، حمل محمد مهمة إعالة أفراد أسرته، وظل لسنوات
+      يتكبد أعباء الحياة القاسية، في سبيل توفير عيش كريم لعائلته، بعد فترة
+      استهواه شياطين الحرب، فحرفوا مسار حياته، لتتفاجأ والدته ذات يوم بخبر كان
+      الأكثر إيلاما في حياة الأسرة، تحولت حياة السكمان وعائلته إلى جحيم لا يطاق.
+</p>
+
+<br>
+<p>
+    في مدينة <a href="https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D8%B2" class="toline">تعز</a>، حيث تختلط رائحة البارود بأنفاس الناس، كبر محمد كأي طفل 
+    آخر، يحلم بيوم دراسي مشمس وأمسيات مليئة 
+    بالضحك، لكن حادث السير المأساوي الذي أودى بحياة
+     والده في 2015، قلب موازين حياته، ترك محمد مقاعد الدراسة في الصف السابع ليحمل
+     عبء عائلته المكونة من خمسة أفراد على كتفيه الصغيرين، تتحدث والدته كفاح، 
+    البالغة من العمر 47 عامًا، بحزن يقطر من كلماتها: "منذ وفاة زوجي، أصبح 
+    محمد الأب والأخ والمعيل لنا، حمل الأثقال عنّا جميعًا، ولم يدع الفقر يقهرنا."
+</p>
+<br>
+<div class="interview-question">
+    السقوط في الهاوية 
+</div>
+<p>
+    مرت الأعوام ثقيلة، وبدأت عزيمة محمد تتهاوى، 
+    انحرف مع رفقاء السوء، وغابت عنه مسؤولياته، وفي نهاية
+     عام 2018، عاد إلى المنزل فجأة وهو يرتدي زيًا عسكريًا ويحمل سلاحًا آليًا، لتصرخ
+      والدته برعب في وجهه "ما هذا الذي فوقك؟" لم يجبها،
+      كان كمن غادر العالم، مثله مثل عشرات الشباب في حيهم
+      الشعبي الذين صار السلاح لغتهم وسقطوا في مستنقع الحرب.
+</p>
+   <br>
+   <p>
+    بعد أسبوع، اختفى محمد، بحثت عنه كفاح في كل زاوية وحارة 
+    دون جدوى، إلى أن جاءها جارهم "أبو غازي" ليخبرها بأنه
+     رآه في السوق، متجهًا إلى إحدى جبهات القتال، حينها 
+    جف حلقها من الخوف، لكن لم يكن أمامها سوى الانتظار الموجع.
+   </p>
+   <br>
+   <p>
+    ذهبت يوما ما إلى "أبو هاني"، عاقل الحي، تطلب مساعدته، لكنه هو الآخر
+     التحق بالجبهة، بدت الحرب وكأنها تبتلع الجميع بلا رحمة، وبعد
+      أسبوع عاد "أبو هاني" يحمل الخيبة قال لكفاح "ابنك ذهب إلى الحدود
+      مع مجموعة أخرى."، سقطت كلمات الرجل على رأس كفاح كالصاعقة.
+   </p>
+   <br>
+   <p>
+    بعد أن مرت شهور، والانتظار ينهش أيامها، عاد حسين، أحد أصدقاء محمد، حاملا بارقة
+     أمل لكفاح، أخبرها أن محمد لا يزال حيًا في موقع آخر، حصلت
+      كفاح على رقم هاتف أحد رفاقه، وحاولت الاتصال به
+      مرارًا، لكن الخطوط كلها كانت مغلقة، وكأن ابنها غاب إلى الأبد.
+   </p>
+   <div class="interview-question">
+    الكارثة
+</div>
+<p>
+    في صباح 12 يناير 2020، تغير كل شيء، فبينما كان محمد ورفاقه في دورية ميدانية، 
+    انفجر بهم لغم أرضي، مات صديقه في الحي علي في الحال، وأصيب محمد إصابة خطيرة في رأسه.
+</p>
+<p>
+    استفاق محمد في المستشفى وهو عاجز عن تمييز العالم 
+    من حوله، يقول بكلمات متعثرة: "صحيت.. مش عارف وين أنا." 
+    وسرعان ما عاد إلى الغيبوبة، محاصرًا بين الوعي والعدم.
+</p>
+<br>
+<img src="alsokmn11.jpg" alt="" class="profile-cover">
+<h3 class="hij">أثر الإصابة في رأس السكمان</h3>
+<br>
+<p>
+    يفتقد محمد قدرته على التركيز والكلام مع مرور الأيام، ووالدته كفاح تراقب انحداره نحو 
+    هاوية لا قاع لها، ودموعها تسيل كلما نظرت إلى عينيه الفارغتين، حاولت 
+    بشتى الطرق أن توفر له العلاج، لكن الفقر كان سلاحًا آخر يصيبها
+     كل يوم، طرقت أبواب المستشفيات والجمعيات، واستغاثت بالجهة
+     التي كان يقاتل معها، لكنها لم تتلق سوى الوعود الفارغة.
+</p>
+<div class="interview-question">
+    العودة إلى العتمة
+</div>
+<p>
+    حينها قررت كفاح أن تعيده إلى البيت، إلى حضن أمه الذي لم يغادره أبدًا رغم كل شيء، كان 
+    المنزل البسيط في حيهم المهدم شاهدًا على مأساتهم اليومية.
+</p>
+<br>
+<p>
+    يجلس محمد في فناء المنزل، يحدق بالسماء، تائها كطير فقد أجنحته، تحكي كفاح لجيرانها بأسى:
+     "محمد فقد عقله، مثلما فقدنا نحن أحلامنا." وعلى الرغم 
+     من ذلك، لم تفقد إيمانها بأن الفرج قد يأتي من حيث لا تدري.
+</p>
+<p>
+    بين حين وأخر تطوف على الجمعيات والمستشفيات، تبحث عن بصيص أمل، وفي كل مرة تُقابل 
+    بالأبواب المغلقة، وتعود إلى محمد بعينين دامعتين وقلب منكسر.
+</p>
+<br>
+<p>
+    قصة محمد "السُكمان" ليست إلا واحدة من آلاف القصص التي ولدت من رحم الحرب، حرب لم 
+    تكتفِ بسلب الأرواح، بل اختطفت العقول ومزقت الأحلام.
+</p>
+<br>
+<p>
+    تجلس كفاح اليوم بجانب ابنها، تحتضنه بنظراتها، تحلم بعودة زمنٍ كانت فيه الحياة
+     أبسط وأجمل، تمر الأيام ثقيلة كأن الزمن قد توقف، لكن قلب 
+     كفاح لا يزال ينبض بالأمل... عله في يومٍ ما يعود
+      محمد كما كان، أو يعود السلام إلى أرضٍ ملت الحرب.
+</p>
+<br>
+  </div>
+
+
+
+
+
+  
+  <!-- قسم الأكثر قراءة -->
+<div class="most-read-section">
+  <div class="most-read-header">
+      <h2 class="section-title-tht">اقرأ أيضا</h2>
+  </div>
+  <div class="most-read-items">
+      <div class="most-read-item">
+          <a href="../health/helth1.html">
+              <img src="../health/helth1.png" alt="مقالة 1">
+          </a>
+          <a href="../health/helth1.html">الأخطاء الطبية...ضحايا بلا عدالة في اليمن</a>
+      </div>
+      <div class="most-read-item">
+        <a href="../society/kder.html">
+          <img src="../society/kder.jpg" alt="مقالة 2"></a>
+          <a href="../society/kder.html">التعليم في خدير: عندما يُصبح التلميذ معلّمًا
+          </a>
+      </div>
+      <div class="most-read-item">
+        <a href="../health/story2.html">
+          <img src="../health/story2.png" alt="مقالة 3"></a>
+          <a href="../health/story2.html">عائشة الكولي...من قلب الريف إلى بوابة المستقبل الطبي </a>
+      </div>
+      <div class="most-read-item">
+        <a href="../society/gwafy.html">
+        <img src="../society/gwafy1 (1).png" alt="مقالة 3"></a>
+        <a href="../society/gwafy.html">       مأرب تنتفض على قوافي الموت
+        </a>
+    </div>
+
+    <div class="most-read-item">
+      <a href="../society/profile1.html">
+      <img src="../society/profile1.jpg" alt="مقالة 3"></a>
+      <a href="../society/profile1.html">       أفراح ناصر ...من الكتابة باسم مستعار إلى جوائز دولية بحرية الصحافة
+      </a>
+  </div>
+
+  <div class="most-read-item">
+    <a href="../society/story1.html">
+    <img src="../society/story1.jpg" alt="مقالة 3"></a>
+    <a href="../society/story1.html">       رحلة الموت..مأساة بحث اليمنيين عن فرصة عمل في الخارج
+    </a>
+</div>
+
+<div class="most-read-item">
+  <a href="../society/profile3.html">
+  <img src="../society/profile3.jpg" alt="مقالة 3"></a>
+  <a href="../society/profile3.html">       يحيى الحيمي..البدء من القمة
+  </a>
+</div>
+
+<div class="most-read-item">
+  <a href="../society/threb.html">
+  <img src="../society/threb.png" alt="مقالة 3"></a>
+  <a href="../society/threb.html">       تهريب المخدرات في زمن الحرب... كارثة تسير إلى مزيد
+
+  </a>
+</div>
+
+  </div>
+</div>
+
+
+  
+
+<!-- النشرة البريدية -->
+<div class="newsletter">
+  <h2>اشترك في نشرتنا البريدية</h2>
+  <form id="newsletter-form">
+    <input 
+      type="email" 
+      id="email-input"
+      name="email"
+      placeholder="atteaf0@gmail.com"
+      required
+    >
+    <button type="submit">اشتراك</button>
+  </form>
+  <div id="subscription-message" style="display: none;"></div>
+</div>
+
+<!--هنا مكان الفوتر سابقا-->
+<!-- تذييل الصفحة -->
+
+
+
+   
+
+<div class="national-symbol">
+  <img src="../شعار الجمهورية اليمنية الأصلي.png" alt="نسر يمني" class="eagle-icon">
+  
+  <div class="designer-credit" style="text-align: right; margin-right: 20px; position: relative;">
+    <p style="margin: 0;">صمم الموقع بواسطة <span style="color: #CE1126; font-weight: bold;">[حاتم]</span></p>
+    
+    <button id="contactBtn" style="background: #CE1126; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-top: 5px; font-size: 12px;">
+      تواصل للتصميم <i class="fas fa-chevron-down"></i>
+    </button>
+    
+    <!-- قائمة الخيارات (ستظهر عند النقر) -->
+    <div id="contactMenu" style="display: none; position: absolute; right: 0; background: white; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 100; min-width: 150px;">
+      <button onclick="openWhatsApp()" 
+        style="background: none; border: none; color: #25D366; cursor: pointer; padding: 8px 12px; display: flex; align-items: center; gap: 5px;">
+    <i class="fab fa-whatsapp"></i> التواصل عبر واتساب
+</button>
+
+<script>
+function openWhatsApp() {
+    const phone = "00967773551347"; // استبدلها برقمك مع رمز الدولة
+    const message = "مرحباً، أنا مهتم بخدماتك التصميمية"; // رسالة افتراضية
+    
+    try {
+        // المحاولة الأولى (لأجهزة الكمبيوتر والجوال)
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+        
+        // إذا لم يفتح خلال ثانية، استخدم طريقة بديلة
+        setTimeout(() => {
+            if(!window.document.hasFocus()) {
+                window.location.href = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+            }
+        }, 1000);
+    } catch (e) {
+        // إذا فشل كل شيء، عرض الرقم للنسخ
+        navigator.clipboard.writeText(phone)
+            .then(() => alert(`تم نسخ الرقم: ${phone}\nيمكنك البحث عنه يدوياً في واتساب`))
+            .catch(() => prompt("الرجاء نسخ الرقم يدوياً للواتساب:", phone));
+    }
+}
+</script>
+      <a href="https://www.facebook.com/profile.php?id=100011494994763&locale=ar_AR" target="_blank" style="display: block; padding: 8px 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee;">
+        <i class="fab fa-facebook" style="color: #1877F2; margin-left: 5px;"></i> فيسبوك
+      </a>
+      <button onclick="sendEmail()" 
+        style="background: none; border: none; color: #CE1126; cursor: pointer; padding: 8px 12px; display: flex; align-items: center; gap: 5px;">
+    <i class="fas fa-envelope"></i> التواصل عبر الإيميل
+</button>
+
+<script>
+function sendEmail() {
+    const email = "hateemalsaqqaf@gmail.com";
+    try {
+        window.location.href = "mailto:" + email;
+    } catch (e) {
+        navigator.clipboard.writeText(email)
+            .then(() => alert("تم نسخ الإيميل: " + email))
+            .catch(() => prompt("الرجاء نسخ الإيميل يدوياً:", email));
+    }
+}
+window.location.href = `mailto:${email}?subject=طلب تصميم موقع&body=السلام عليكم%0D%0Aأرغب في...`;
+if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    navigator.clipboard.writeText(email);
+}
+</script>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- إضافة المزيد من البروفايلات لاحقًا -->
+    <footer class="footer">
+        <div class="container">
+            <p>جميع الحقوق محفوظة لأطياف &copy; 2025</p>
+            <!-- أيقونات وسائل التواصل الاجتماعي -->
+        <div class="social-media">
+          <a href="https://www.facebook.com/profile.php?id=61575507370318" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i> <!-- أيقونة فيسبوك -->
+          </a>
+          <a href="https://x.com/atteaf0" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i> <!-- أيقونة تويتر -->
+          </a>
+          <a href="https://www.instagram.com/htmlsqf?igsh=MTVybDR3Y2drdGwyNg==
+
+          " target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i> <!-- أيقونة انستغرام -->
+          </a>
+          <a href="https://www.youtube.com/@atteaf-w8e" target="_blank" aria-label="YouTube">
+              <i class="fab fa-youtube"></i> <!-- أيقونة يوتيوب -->
+          </a>
+
+      <!-- زر المشاركة -->
+      <div class="share-pin" onclick="shareContent()" title="مشاركة الرابط">
+        <i class="fas fa-share-alt"></i> <!-- أو استخدم أيقونة الدبوس -->
+      </div>
+
+      </div>
+
+      <nav class="footer-menu">
+        <ul>
+            <li><a href="../about_us/abut_us.html">من نحن</a></li>
+            <li><a href="../contact/contact.html">اتصل بنا</a></li>
+            <li><a href="../privacy-policy/privacy-policy.html">سياسة الخصوصية</a></li>
+        </ul>
+    </nav>
+</div>
+</footer>
+<script>
+  document.getElementById('share-btn').addEventListener('click', function() {
+      if (navigator.share) {
+          navigator.share({
+              title: 'الجمهورية اليمنية',
+              text: 'تعرف على الجمهورية اليمنية',
+              url: window.location.href
+          }).catch(err => {
+              console.error('Error sharing:', err);
+          });
+      } else {
+          alert('خاصية المشاركة غير مدعومة في متصفحك. يمكنك نسخ الرابط يدوياً.');
+      }
+  });
+  </script>
+
+<script src="../multimedia.js"></script>
+
+</body>
+
+
+
+
+</html>

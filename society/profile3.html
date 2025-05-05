@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atteaf</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="singles.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البروفايلات</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Droid+Arabic+Naskh&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Badeen+Display&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+  </head>
+
+
+<body dir="rtl">
+  <script src="https://kit.fontawesome.com/91eada0414.js" crossorigin="anonymous"></script>
+
+<!--start header-->
+<header class="header">
+  <div class="top-header">
+    <div class="container">
+        <div class="email">
+            
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:atteaf0@gmail.com">atteaf0@gmail.com</a>
+          </div>
+        </div>
+        <div class="social-icons">
+          
+          <a href="https://www.facebook.com/profile.php?id=61575507370318"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/atteaf0"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/htmlsqf?igsh=MTVybDR3Y2drdGwyNg=="><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@atteaf-w8e"><i class="fab fa-youtube"></i></a>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- الحاوية السفلية -->
+<div class="header-divider"></div>
+<div class="bottom-header">
+  <div class="container">
+
+    <a href="index.html" class="logo">
+      <a href="index.html" class="logo">
+        <img src="../logo.png" alt="شعار الموقع">
+    </a>
+  <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.bottom-header .menu ul');
+        navLinks.classList.toggle('active');
+    }
+</script>
+      <nav class="menu">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="navLinks">
+          
+              
+           
+                  <li><a href="../image/images.html">رياضة</a></li>
+                  <li><a href="../explore/explores.html">اقتصاد</a></li>
+                
+                  
+                  <li><a href="../article/articles.html">رأي</a></li>
+                  <li><a href="../multimedia/multimedia.html">وسائط متعددة</a></li>
+    
+                  <li><a href="../health/health.html">صحة</a></li>
+                  <li><a href="../society/socity.html">ثقافة وفن</a></li>
+    
+    
+    
+    <li><a href="socity.html">مجتمع</a></li>
+    
+    <li><a href="../news/news.html">أخبار</a></li>
+    
+    <li><a href="../index.html">الرئيسية</a></li>
+<div class="search-container">
+  <button class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></button>
+  <div class="search-box" id="searchBox">
+      <input type="text" placeholder="بحث..." class="search-input">
+  </div>
+</div>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+
+
+
+<!--هنا مكان الفوتر سابقا-->
+<!-- تذييل الصفحة -->
+<!-- صندوق المحتوى الأساسي -->
+
+<!-- الحاوية الأساسية -->
+<div class="main-wrapper">
+  <!-- صورة البروفايل بحجم 1500px -->
+  <div class="profile-header">
+    <h1 class="title">    يحي الحيمي...البدء من القمة    </h1>
+    <br>
+    <h1 class="title">       طالب مثابر وناشط بارز في العمل الحقوقي والتطوعي      </h1>
+      <img src="profile3.jpg" alt="عنوان البروفايل" class="profile-cover">
+    </div>
+ <!-- معلومات الكاتب -->
+ <div class="author-info">
+  <a href="all-articles.html">
+      <img src="../author/hattem.png" alt="اسم الكاتب" class="author-img">
+  </a>
+  <a href="all-articles.html" class="author-name">حاتم السقاف</a>
+  
+<!-- إضافة أيقونات التواصل الاجتماعي هنا -->
+<div class="author-social-icons">
+  <a href="#" class="whatsapp" id="whatsapp-share">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="#" class="facebook" id="facebook-share">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="mailto:atteaf0@gmail.com" class="email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="#" class="share" id="share-btn">
+    <i class="fas fa-share-alt"></i>
+  </a>
+</div>
+</div>
+
+</div>
+<script>
+  // كود مشاركة الواتساب
+  document.addEventListener('DOMContentLoaded', function() {
+    const whatsappBtn = document.getElementById('whatsapp-share');
+    if(whatsappBtn) {
+      whatsappBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent("اقرأ هذا المقال المميز: " + document.title);
+        window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+      });
+    }
+  
+    // كود مشاركة الفيسبوك
+    const facebookBtn = document.getElementById('facebook-share');
+    if(facebookBtn) {
+      facebookBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = encodeURIComponent(window.location.href);
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+      });
+    }
+  
+    // كود المشاركة العامة
+    const shareBtn = document.getElementById('share-btn');
+    if(shareBtn) {
+      shareBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            text: 'اكتشف هذا المقال الرائع',
+            url: window.location.href,
+          })
+          .catch(err => console.error('حدث خطأ في المشاركة:', err));
+        } else {
+          // حل بديل للمتصفحات التي لا تدعم navigator.share
+          const shareUrl = `mailto:?subject=${encodeURIComponent(document.title)}&body=${encodeURIComponent(window.location.href)}`;
+          window.location.href = shareUrl;
+        }
+      });
+    }
+  });
+  </script>
+
+  <!-- صندوق محتوى البروفايل -->
+  <div class="content-box">
+
+<p>
+    عندما نتحدث عن الإبداع في العمل التطوعي
+     بين الطلاب اليمنيين، تتجه الأنظار صوب الطالب العشريني (يحي الحيمي)، شاب يتمتع بميزة 
+    فريدة في التواصل، ومن يستمع له يصغي لحضوره العالي وكاريزماه الطاغية، موهبة صقلها يحيى
+     بالتدريب المستمر وممارسة الأنشطة التطوعية لدى عدد من المؤسسات والمنظمات الحقوقية المحلية 
+    والعالمية. 
+  </p>
+  <p>
+    وحين يعتقد البعض أن العمل التطوعي هو أرقى الأعمال التي يمارسها الإنسان في 
+    سنوات متقدمة من عمره، خالف الشاب الحيمي هذه القاعدة، فبدأ عمله التطوعي حين كان طالبا 
+    في المدرسة، واستمر في عمله بشغف وإبداع، ليحصد تكريما مبكرا على المستوى المحلي والدولي. 
+   </p>
+   <br>
+   <p>
+    ولد الشاب (الحيمي) عام 1997 في الحيمة الداخلية التابعة 
+    لمحافظة صنعاء، وتلقى تعليمه الابتدائي في مدرسة عمار بن ياسر بمديرية
+     نقم في العاصمة صنعاء، وكان يدرس العلوم الدينية في الجامع الكبير بصنعاء
+     القديمة، وحينما بلغ الحيمي الحادية عشر من عمره، واجه قدراً قاسياً، فبينما كان
+     ينتطر بزوغ شمس صباحات أحد الأيام، ليتم تكريمه في الجامع الكبير، توفي والده.
+  </p>
+  <br>
+    <p>
+    واصل الحيمي تعليمه بدعم من أسرته الذين لمحوا فيه الفطنة والذكاء، كونه من أوائل الصف في مدرسته، كما نال تكريما في معهد أمديست عند دراسته اللغة الإنجليزية فيه عام 2012
+  </p>
+
+  <div class="interview-question">
+    بداية المشوار
+
+     </div>
+     <p>
+    انخرط الحيمي في العمل الحقوقي التطوعي 
+    بفضل زملائه في المدرسة، الذين لم يمنعهم صغر سنهم من ممارسة النشاط الحقوقي،
+     على مستوى مدارس مديرية آزال، لفت انتباه الحيمي نشاط "الناشطين الحقوقيين"
+     وعلاقاتهم الواسعة بالجهات الرسمية، فطلب أن يشاركهم في العمل، وعندما دخل 
+    الحيمي معهم في دورة تدريبية تهتم ببناء 
+    قدرات الشباب والأطفال على مهارات التواصل وحل المشكلات، تفاجأ الحيمي أن مؤسسة
+     "أجيال للطفولة والتنمية" التي تقوم بالدورة لم تختر سواه لعمل تطوعي لديها.</p>
+
+     <br>
+     <p>
+    يقول الحيمي لـ"أطياف" "عملت لدى المؤسسة مستمتعا بعملي، رغم علمي أنني أعمل
+     بدون أي مقابل، وذلك لأنني لم أوقع معهم عقد عمل، ولم نتفق على مقابل، وبعد شهر
+  من العمل استدعاني مدير المؤسسة، وتفاجأت عندما أعطاني 30 ألف ريال كراتب شهري".</p>
+<br>
+<p>
+    لم يكتف الحيمي بالعمل لدى مؤسسة أجيال للطفولة والتنمية، بل وجد فيها فرصة 
+    لتطوير قدراته وشحذ مهاراته، وبنى علاقات مع العديد من المبادرات والمؤسسات الإنسانية 
+    المحلية المهتمة بالطفولة، ليصبح الحيمي أحد مؤسسي الإتحاد العام لأطفال اليمن، وأصبح 
+    لاحقا مسؤولا ماليا في الاتحاد، فمديرا تنفيذيا، ثم أصبح القائم بعمل رئيس الاتحاد.
+  </p>
+  
+  <div class="interview-question">
+    تكريم محلي ودولي
+
+     </div>
+     <p>
+    دخلت اليمن في العام 2015 بحرب دامية، 
+    تعرضت فيها عدد من المحافظات اليمنية وعلى رأسها صنعاء لغارات مدمرة من قبل التحالف
+     العربي، الأمر الذي كان له بالغ الأثر على صحة الأطفال النفسية والجسدية، حتى أن العديد
+     منهم أصيبوا بالسكر نتيجة الفزع من القصف، عندها لم يكن الحيمي بعيدا عن الأطفال محور 
+    اهتمامه، ليقوم وهو في السابعة عشر من عمره بتقديم الدعم النفسي لهم مع منظمة اليونسف. 
+  </p>
+  <p>
+    واستمر الحيمي -وباهتمام خاص بالطفولة¬- في 
+    ممارسة نشاطه الحقوقي والتطوعي، نشاط تُوج بعدد من التكريمات من قبل منظمات محلية وأممية،
+     منها تكريم ولقب " أفضل متحدث وممثل لليمن في اليوم العالمي للشباب" من قبل منظمة اليونيسف،
+     وتكريم من قبل الأمم المتحدة في اليوم العالمي للمتطوعين، كما عُين مستشارا لحكومة الأطفال
+     الوطنية، إلى جانب عمله في منظمة التنمية المستدامة كمنشط مساحات صديقة، وظهر الحيمي على 
+    العديد من القنوات التلفزيونية والإذاعات المحلية والدولية، أبرزها إذاعة النور اللبنانية.
+  </p>
+  
+  <div class="interview-question">
+    طالب مجتهد
+
+     </div>
+     
+     <p>
+
+    كان الحيمي يمارس نشاطه التطوعي والحقوقي ويدرس الثانوية في الوقت نفسه، دون أن يتأثر
+     مستواه الدراسي، وعند تخرجه من الثانوية التحق بجامعة صنعاء وكعادة الشاب النشيط،
+     قام الحيمي بالتسجيل في كلية التجارة، وكلية البترول والموارد الطبيعية، وكلية
+     الإعلام، ونجح في اختبار القبول في الكليات الثلاث، إلا أن قراره استقر على الدراسة
+     في كلية الإعلام، يقول الحيمي "دخلت كلية الإعلام لرغبتي الكبيرة في أن أصبح إعلاميا" 
+    
+    </p>
+    <p>
+
+    وفي عامه الجامعي الأول عمل الحيمي متطوعا في فريق العلاقات
+     العامة في عدد من الأعمال التطوعية الخيرية كمشروع "بنك الكساء"، بالإضافة إلى عمله 
+    التطوعي في فريق اللوجستيك في تدكس بصنعاء
+  </p>
+    <p>
+    وفي العام الثاني لدراسته بكلية الإعلام، عُين
+     نائبا لرئيس دائرة الصحافة الورقية والإلكترونية في الأمانة العامة للإعلام والاتصال في
+     القوى الديمقراطية للسلام والوئام، التي يقع مقرها الرئيسي في جمهورية مصر العربية.
+    </p>
+     <p>
+
+     يشارف الحيمي اليوم على نهاية مشواره الدراسي، للحصول على شهادة البكالوريوس من قسم الإذاعة 
+     والتلفزيون، وفي كل سنة طواها في القسم نال تكريما كأحد الثلاثة الطلاب الأوائل بالقسم.  
+    </p>
+  <br>
+  <br>
+    <p>
+
+     في الوقت الذي يفتقر فيه اليمن بشكل خاص والوطن العربي بشكل 
+    عام للعمل التطوعي مقارنة بدول العالم الأول، يظهر يحيى الحيمي مثالا بارزا على قدرة الشاب 
+    اليمني على ممارسة العمل التطوعي والنجاح فيه، دون أن تتأثر التزاماته الدراسية أو الأسرية.
+  </p>
+  <p>
+
+    يذكر زملاء الحيمي في كلية الإعلام قصة طريفة حدثت في بداية دراسته، و
+    ذلك عندما طلب أحد الدكاترة من الطلاب التعريف بأنفسهم، في إطار الإجابة عن بعض الأسئلة التي كان
+     أحدها يتطرق إلى عمل الطالب الحالي أو السابق، وكانت معظم إجابات الطلاب هي "لا أعمل" وقلة من
+     الإجابات كانت "أعمل في كذا"، وكانت دهشة الحاضرين كبيرة عندما صعد الحيمي واستعرض سيرته وأعماله،
+     أعقبها قول الدكتور مازحا " هذا يفسر لماذا لم يجد زملاؤك عملا، لقد أخذت كل الأعمال يا يحيى"
+  </p>
+   
+                    <br>
+                    
+                    <div class="interview-question">
+                      بعض الشهائد التقديرية
+              
+                           </div>
+                        <br>
+                        <br>
+                        
+                                    <br>
+                                 <img src="profile3 اليونسف.png" alt="" class="profile-cover">
+                                 <h3 class="hij">
+                                    شهادة تقديرية للحيمي من قبل الأمم المتحدة في "اليوم العالمي للتطوع"
+                      </h3>
+                                 <br>
+                                 <br> 
+                                 <img src="profile3 الاتحاد العام لأطفا اليمن.png" alt="" class="profile-cover">
+                                 <h3 class="hij">شهادة شكر وتقدير للحيمي من قبل الإتحاد العام لأطفال اليمن</h3>
+                                 <br>
+                                 <br>
+                                 <img src="profile3 كالبنيان.png" alt="" class="profile-cover">
+                                 <h3 class="hij">شهادة تقديرية للحيمي من مؤسسة كالبنيان</h3>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <img src="profile3 حماية الأطفال.png" alt="" class="profile-cover">
+                                 <h3 class="hij">شهادة تقديرية للحيمي من مؤسسة حماية الأطفال - اليونيسف</h3>
+                                 <br>
+                                 <br>
+                                 <img src="profile3 القوى الديموقراطية.png" alt="" class="profile-cover">
+                                 <h3 class="hij">بطاقة عضوية الحيمي في ائتلاف القوى الديمقراطية للسلام والوئام</h3>
+ <br>
+ <br>
+ <br>
+ <br>
+                                </div>
+
+
+
+                                
+  
+  <!-- قسم الأكثر قراءة -->
+<div class="most-read-section">
+  <div class="most-read-header">
+      <h2 class="section-title-tht">اقرأ أيضا</h2>
+  </div>
+  <div class="most-read-items">
+      <div class="most-read-item">
+          <a href="../health/helth1.html">
+              <img src="../health/helth1.png" alt="مقالة 1">
+          </a>
+          <a href="../health/helth1.html">الأخطاء الطبية...ضحايا بلا عدالة في اليمن</a>
+      </div>
+      <div class="most-read-item">
+        <a href="../society/kder.html">
+          <img src="../society/kder.jpg" alt="مقالة 2"></a>
+          <a href="../society/kder.html">التعليم في خدير: عندما يُصبح التلميذ معلّمًا
+          </a>
+      </div>
+      <div class="most-read-item">
+        <a href="../health/story2.html">
+          <img src="../health/story2.png" alt="مقالة 3"></a>
+          <a href="../health/story2.html">عائشة الكولي...من قلب الريف إلى بوابة المستقبل الطبي </a>
+      </div>
+      <div class="most-read-item">
+        <a href="../society/gwafy.html">
+        <img src="../society/gwafy1 (1).png" alt="مقالة 3"></a>
+        <a href="../society/gwafy.html">       مأرب تنتفض على قوافي الموت
+        </a>
+    </div>
+
+    <div class="most-read-item">
+      <a href="../society/profile1.html">
+      <img src="../society/profile1.jpg" alt="مقالة 3"></a>
+      <a href="../society/profile1.html">       أفراح ناصر ...من الكتابة باسم مستعار إلى جوائز دولية بحرية الصحافة
+      </a>
+  </div>
+
+  <div class="most-read-item">
+    <a href="../society/story1.html">
+    <img src="../society/story1.jpg" alt="مقالة 3"></a>
+    <a href="../society/story1.html">       رحلة الموت..مأساة بحث اليمنيين عن فرصة عمل في الخارج
+    </a>
+</div>
+
+<div class="most-read-item">
+  <a href="../society/threb.html">
+  <img src="../society/threb.png" alt="مقالة 3"></a>
+  <a href="../society/threb.html">       تهريب المخدرات في زمن الحرب... كارثة تسير إلى مزيد
+
+  </a>
+</div>
+
+  </div>
+</div>
+
+
+   
+  
+
+<!-- النشرة البريدية -->
+<div class="newsletter">
+  <h2>اشترك في نشرتنا البريدية</h2>
+  <form id="newsletter-form">
+    <input 
+      type="email" 
+      id="email-input"
+      name="email"
+      placeholder="atteaf0@gmail.com"
+      required
+    >
+    <button type="submit">اشتراك</button>
+  </form>
+  <div id="subscription-message" style="display: none;"></div>
+</div>
+
+<!--هنا مكان الفوتر سابقا-->
+<!-- تذييل الصفحة -->
+
+
+
+   
+
+<div class="national-symbol">
+  <img src="../شعار الجمهورية اليمنية الأصلي.png" alt="نسر يمني" class="eagle-icon">
+ 
+
+  <div class="designer-credit" style="text-align: right; margin-right: 20px; position: relative;">
+    <p style="margin: 0;">صمم الموقع بواسطة <span style="color: #CE1126; font-weight: bold;">[حاتم]</span></p>
+    
+    <button id="contactBtn" style="background: #CE1126; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-top: 5px; font-size: 12px;">
+      تواصل للتصميم <i class="fas fa-chevron-down"></i>
+    </button>
+    
+    <!-- قائمة الخيارات (ستظهر عند النقر) -->
+    <div id="contactMenu" style="display: none; position: absolute; right: 0; background: white; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 100; min-width: 150px;">
+      <button onclick="openWhatsApp()" 
+        style="background: none; border: none; color: #25D366; cursor: pointer; padding: 8px 12px; display: flex; align-items: center; gap: 5px;">
+    <i class="fab fa-whatsapp"></i> التواصل عبر واتساب
+</button>
+
+<script>
+function openWhatsApp() {
+    const phone = "00967773551347"; // استبدلها برقمك مع رمز الدولة
+    const message = "مرحباً، أنا مهتم بخدماتك التصميمية"; // رسالة افتراضية
+    
+    try {
+        // المحاولة الأولى (لأجهزة الكمبيوتر والجوال)
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+        
+        // إذا لم يفتح خلال ثانية، استخدم طريقة بديلة
+        setTimeout(() => {
+            if(!window.document.hasFocus()) {
+                window.location.href = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+            }
+        }, 1000);
+    } catch (e) {
+        // إذا فشل كل شيء، عرض الرقم للنسخ
+        navigator.clipboard.writeText(phone)
+            .then(() => alert(`تم نسخ الرقم: ${phone}\nيمكنك البحث عنه يدوياً في واتساب`))
+            .catch(() => prompt("الرجاء نسخ الرقم يدوياً للواتساب:", phone));
+    }
+}
+</script>
+      <a href="https://www.facebook.com/profile.php?id=100011494994763&locale=ar_AR" target="_blank" style="display: block; padding: 8px 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee;">
+        <i class="fab fa-facebook" style="color: #1877F2; margin-left: 5px;"></i> فيسبوك
+      </a>
+      <button onclick="sendEmail()" 
+        style="background: none; border: none; color: #CE1126; cursor: pointer; padding: 8px 12px; display: flex; align-items: center; gap: 5px;">
+    <i class="fas fa-envelope"></i> التواصل عبر الإيميل
+</button>
+
+<script>
+function sendEmail() {
+    const email = "hateemalsaqqaf@gmail.com";
+    try {
+        window.location.href = "mailto:" + email;
+    } catch (e) {
+        navigator.clipboard.writeText(email)
+            .then(() => alert("تم نسخ الإيميل: " + email))
+            .catch(() => prompt("الرجاء نسخ الإيميل يدوياً:", email));
+    }
+}
+window.location.href = `mailto:${email}?subject=طلب تصميم موقع&body=السلام عليكم%0D%0Aأرغب في...`;
+if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    navigator.clipboard.writeText(email);
+}
+</script>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- إضافة المزيد من البروفايلات لاحقًا -->
+    <footer class="footer">
+        <div class="container">
+            <p>جميع الحقوق محفوظة لأطياف &copy; 2025</p>
+            <!-- أيقونات وسائل التواصل الاجتماعي -->
+        <div class="social-media">
+          <a href="https://www.facebook.com/profile.php?id=61575507370318" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i> <!-- أيقونة فيسبوك -->
+          </a>
+          <a href="https://x.com/atteaf0" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i> <!-- أيقونة تويتر -->
+          </a>
+          <a href="https://www.instagram.com/htmlsqf?igsh=MTVybDR3Y2drdGwyNg==
+
+          " target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i> <!-- أيقونة انستغرام -->
+          </a>
+          <a href="https://www.youtube.com/@atteaf-w8e" target="_blank" aria-label="YouTube">
+              <i class="fab fa-youtube"></i> <!-- أيقونة يوتيوب -->
+          </a>
+
+      <!-- زر المشاركة -->
+      <div class="share-pin" onclick="shareContent()" title="مشاركة الرابط">
+        <i class="fas fa-share-alt"></i> <!-- أو استخدم أيقونة الدبوس -->
+      </div>
+
+      </div>
+
+            <nav class="footer-menu">
+                <ul>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                </ul>
+            </nav>
+        </div>
+      </footer>
+
+<script>
+  document.getElementById('share-btn').addEventListener('click', function() {
+      if (navigator.share) {
+          navigator.share({
+              title: 'الجمهورية اليمنية',
+              text: 'تعرف على الجمهورية اليمنية',
+              url: window.location.href
+          }).catch(err => {
+              console.error('Error sharing:', err);
+          });
+      } else {
+          alert('خاصية المشاركة غير مدعومة في متصفحك. يمكنك نسخ الرابط يدوياً.');
+      }
+  });
+  </script>
+
+<script src="../multimedia.js"></script>
+
+</body>
+
+
+
+
+</html>
